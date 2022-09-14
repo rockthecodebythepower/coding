@@ -1,0 +1,27 @@
+body {
+  /* El cuerpo de la página debe mostrar un margen de media pulgada */
+  margin: 0.5in;
+}
+
+h1 {
+  /* Los elementos <h1> deben mostrar un interlineado de 5 centímetros */
+  line-height: 5cm;
+}
+
+p {
+  /* Las palabras de todos los párrafos deben estar separadas 4 milímetros entre si */
+  word-spacing: 4mm;
+  font-size: 16px;
+  /* Los párrafos deben mostrar un margen de 0.5 veces el tamaño de la fuente */
+  margin: 0.5em;
+}
+
+a {
+  /* Los enlaces se deben mostrar con un tamaño de letra de 12 puntos */
+  font-size: 12pt;
+}
+
+span {
+  /* Los elementos <span> deben tener un tamaño de letra de 1 pica */
+  font-size: 1pc;
+}
