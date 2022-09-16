@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Anek Telugu", sans-serif;
+}
+
+h1 {
+  margin-left: 4rem;
+}
+
+.image-container {
+  width: 100%;
+}
+img {
+  margin: auto;
+  display: block;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.525);
+}
+
+p {
+  margin: 4rem 4rem 0 4rem;
+  padding: 0 10rem;
+}
