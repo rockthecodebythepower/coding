@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./attribute-tabindex.css">
+  <title>tabindex</title>
+</head>
+
+<body>
+  <p>Click anywhere in this pane, then try tabbing through the elements.</p>
+
+  <label>First in tab order:<input type="text"></label>
+
+  <div tabindex="0">Tabbable due to tabindex.</div>
+
+  <div>Not tabbable: no tabindex.</div>
+
+  <label>Third in tab order:<input type="text"></label>
+
+</body>
+
+</html>
