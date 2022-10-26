@@ -1,0 +1,158 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* PALETTE */
+:root {
+  --background: #082f45;
+  --primary: #ededed;
+  --secondary: #e54c39;
+  --hover: #ff5741;
+}
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* GLOBAL STYLES */
+* {
+  font-family: "Lato", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  background-image: url("./background.jpg");
+  /* background-size: cover;
+background-repeat: no-repeat; */
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+a {
+  color: var(--secondary);
+}
+
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+/* NAVIGATOR */
+nav {
+  height: 14vh;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+}
+
+nav > img {
+  height: 80px;
+  display: inline;
+  filter: invert(100%);
+}
+
+nav > ul {
+  position: relative;
+  display: inline;
+  bottom: 30px;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+  color: var(--hover);
+  border-bottom: 2px solid var(--hover);
+  border-top: 2px solid var(--hover);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+/* MAIN */
+
+main {
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding: 10px 0;
+}
+
+.properties {
+  text-align: center;
+}
+
+.properties h2 {
+  padding: 10px 0;
+}
+
+.properties li {
+  padding: 10px 0;
+}
+
+.properties li::before {
+  content: "🕸";
+  padding-right: 10px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery > h2 {
+  padding: 10px 0;
+}
+
+.gallery > ul > li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.gallery > ul > li > img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 14px;
+  filter: grayscale(50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery > ul > li > img:hover{
+  filter: grayscale(0%);
+}
+
+/* FOOTER */
+footer {
+  height: 5vh;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+.box {
+  width: 25rem;
+  height: 5rem;
+}
+
+.first {
+  width: 30%;
+  height: 100%;
+  background-color: red;
+}
+
+.second {
+  width: 65%;
+  height: 100%;
+  background-color: blue;
+}
+
+nav{
+    width: 100vw;
+    height: 20vh;
+    background-color: bisque;
+}

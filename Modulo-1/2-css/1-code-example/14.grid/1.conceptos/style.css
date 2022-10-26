@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: crimson;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

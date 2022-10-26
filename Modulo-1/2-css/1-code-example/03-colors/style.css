@@ -1,0 +1,19 @@
+body {
+  background-color: aquamarine;
+}
+
+/* BY COLOR NAME */
+h1 {
+  color: crimson;
+}
+
+/* RGBA  */
+h2 {
+  color: rgba(203, 26, 64, 0.5);
+}
+
+div {
+  height: 5rem;
+  width: 5rem;
+  background-color: #824444;
+}

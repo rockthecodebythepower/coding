@@ -1,0 +1,82 @@
+header {
+  grid-area: my-header;
+  background-color: crimson;
+}
+
+nav {
+  grid-area: my-nav;
+  background-color: cornflowerblue;
+}
+
+aside {
+  grid-area: my-aside;
+  background-color: yellow;
+}
+
+section {
+  grid-area: my-section;
+  background-color: indigo;
+}
+
+footer {
+  grid-area: my-footer;
+  background-color: coral;
+}
+
+main {
+  color: green;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:
+    100px
+    50px
+    1fr
+    100px
+    200px;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section my-section my-section"
+    "my-aside my-aside my-aside"
+    "my-footer my-footer my-footer";
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows:
+      150px
+      100px
+      1fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-footer my-footer my-footer";
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1800px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows:
+      200px
+      1fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer";
+  }
+}
+
+/* REPEAT
+main{
+    grid-template-columns: 1fr 1fr 1fr 200px 200px 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 200px) repeat(3, 1fr) ;
+}
+ */

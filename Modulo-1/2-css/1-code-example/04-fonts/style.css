@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+@font-face {
+  font-family: "TLOTR";
+  src: url(./fonts/anirm.ttf) format("truetype");
+  font-style: normal;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "TLOTR", sans-serif;
+
+}
+
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
