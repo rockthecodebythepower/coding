@@ -19,7 +19,7 @@ Vamos a trabajar sobre lo que hemos creado en el ejercicio anterior, pero ahora 
 
 Tu página `index.html` debería quedar así:
 
-<img src="../../../../README/01-index-page.png">
+<img src="../../../../README/01-index-page.PNG">
 
 **Comprueba que si haces click en cada link, navegas al elemento HTML de la misma carpeta en tu navegador**
 
@@ -28,7 +28,7 @@ Tu página `index.html` debería quedar así:
 
 Tu página `profile.html` debería quedar así:
 
-<img src="../../../../README/02-profile-page.png">
+<img src="../../../../README/02-profile-page.PNG">
 
 **Comprueba que si haces click en cada link, navegas al elemento HTML de la misma carpeta en tu navegador**
 
@@ -37,7 +37,7 @@ Tu página `profile.html` debería quedar así:
 
 Tu página `contact.html` debería quedar así:
 
-<img src="../../../../README/03-contact-page.png">
+<img src="../../../../README/03-contact-page.PNG">
 
 **Comprueba que si haces click en cada link, navegas al elemento HTML de la misma carpeta en tu navegador**
 
