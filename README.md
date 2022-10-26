@@ -26,7 +26,7 @@ Por ello en cada módulo nos encontraremos la materia tratada, code-example ,eje
 
 Por ello os recomendamos que sigáis los cambios del repositorio y le deis a la estrellita 🌟
 
-![save-star.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9415ddad-91d1-4518-a179-0455cd06d9a7/save-star.png)
+<div align="center"><img width="250px" src="./README/save-star.png" /></div>
 
 Además de esto podéis clonar el repositorio e ir bajando las actualizaciones del mismo:
 
