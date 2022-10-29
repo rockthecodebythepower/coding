@@ -1,0 +1,77 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Darth Vader",
+      "description": "Anakin Skywalker was a legendary Force-sensitive human male who was a Jedi Knight of the Galactic Republic and the prophesied Chosen One of the Jedi Order, destined to bring balance to the Force. Also known as 'Ani' during his childhood, Skywalker earned the moniker 'Hero With No Fear' from his accomplishments in the Clone Wars. His alter ego, Darth Vader, the Dark Lord of the Sith, was created when Skywalker turned to the dark side of the Force, pledging his allegiance to the Sith Lord Darth Sidious at the end of the Republic Era.",
+      "avatar": "https://lh3.googleusercontent.com/e3OX9bzgpkbLBZ3bev8RRZc5I_S1T6z00I5CgEvw_4EKZBgEsISJLcpYM7s--Dt3HmJvUjv7Bla4uBLKwMaDei_GfcX0uRhIaBfz8bQL23z-fp3vFGdR5p8nNGYcPrFzmq-WIOciUpbGb-cw8Qe22eR0As6EcwBzLbphZoHuO6eRyancSinjValqmnvujZtVR1ebHTcFKdmL20x69-cfAQmn4o3IB57hpRMTsWQwiDRqk6XSb_iI0RUFC3G9btAHMYwUg7Bpm0D-O2W7urHgUHM3tzV3pozPgLQnUUVP9nbFNoroolbqBPQzzjT1TGscnaYiETUjcWPerRF50pW3rcm0vu1-_oxkW4i5RKaOf2YSmkL0lLQgg70wR3ItAcP2YaMP9WoLYp1jZv9sYfky_jX1ubvJ3sThiSNVucmSzEGM5Pe0qPEDdCO81lWe4e004VD559G-x3c7l9mLikEmCEui8CdFHMZphWfLpYe8I401NwDcd8mw5nnFnEf8CF9ANRR0dzzduDUyUdCQkLC7K0dOe6soDgB7YotjfczAu1jJUpId5_O-XF2I_wChytyeiAmIDzyDt5W4Kck9mP6t8vHik8_mR3PwrQbK4SMQjpMh2-NUoB_dJ77R_8o8tTZW2eBe-PzUSp7MD5qO_lLa9UH3B3AWQ5wU2ZATCNvMZVx7RI_URYIpoRefhg8N6ZX0EVtty6U95XMMXeFieX-W1QjPyWjKYJVyNe_diVPvKqts-aGSTgyvRYZYOEwGn9JwzDZdjx9Hxlc8dYxY7mN_v4Js-oraMGP8wOA=w228-h321-no?authuser=0",
+      "idPlanet": 1
+    },
+    {
+      "id": 2,
+      "name": "Padmé Amidala",
+      "description": "Padmé Amidala Naberrie was a human female senator who represented the people of Naboo during the final years of the Galactic Republic. Prior to her career in the Galactic Senate, Amidala was the elected ruler of the Royal House of Naboo. A political idealist, she advocated for the preservation of democracy as well as a peaceful resolution to the Clone Wars. However, her secret marriage to the Jedi Knight Anakin Skywalker would have a lasting effect on the future of the galaxy for decades to come.",
+      "avatar": "https://lh3.googleusercontent.com/N11QQ09c5aUYsZucniT7xvK3tNSNzazYd4BUGFetA1npvbXL2lnsxpf0BaeZtcFZs00cbTV-5nYZyDcrLhwn1RZC4XlZChSPfg55m7Y7so4NIGlhxkITW4mOoV83eUNa-MuBqsrneGVQ22wPdsvj_pHp0gJjk283hKlr9cOU-TiRUO0zcTBXRFHU86e6fSGTbgePD-syCjnS0unoq0RjeBHT0CcbWq_BkQ8IVIeyKrGWto0LDYQVAyLW7Wqpa4NsY1cHBkMDS-4uYJyUFrkbfiO1vPXW1ZxeNwZqg-wo7SYbLdiD681RA_nCzescri1snbwvGn8YAmZ91ra6OhML6uvnZv2_7PS0_horoRV2wptWvyabhffKR2EZP8I5U4zMSEXmUHRjYzmFthmFYpvSAfGDH9hwa6DhkqrnP0LUQ2A3YYlQvngS_QwShHEtDZUEAZe61SaUwH26po9MoClMXEfX7bJ81-mD5wBQcGCKpRB54E6rDMEf50bpL7IjoUq7SgK9JTdiL2faL-axUgbLnTwNVATLBuDT2DcJk_cPI3oPJtah4Hx2GA6AgoXFWhFQuLK2yzgcVX81bGlW5FeGluBimhzC6NSd2dL0MDgFF2lXG-MssXeaQoGBdQbGtxnrQZZhdBJlOOXkcZU6kGIyLMGZM16ij7YS1Bs9Fj2SsFmy2tNTiQO632Sxv-Uf_uxL1U6Ftkk5YotKTsgNycdWfBdwQu3iXszSiVx_ST8ZbIDKcaiChfNfEwNpqz1PkHxFRyDVU9di2miEEy041fYLaPwCHGcEv6-grWc=w245-h346-no?authuser=0",
+      "idPlanet": 3
+    },
+    {
+      "id": 3,
+      "name": "Qui-Gon Jinn",
+      "description": "Qui-Gon Jinn, a Force-sensitive human male, was a venerable if maverick Jedi Master who lived during the last years of the Republic Era. He was a wise and well-respected member of the Jedi Order, and was offered a seat on the Jedi Council, but chose to reject and follow his own path. Adhering to a philosophy centered around the Living Force, Jinn strove to follow the will of the Force even when his actions conflicted with the wishes of the High Council. After encountering Anakin Skywalker, Jinn brought him to the Jedi Temple on Coruscant, convinced he had found the Chosen One. His dying wish was for Skywalker to become a Jedi and ultimately restore balance to the Force.",
+      "avatar": "https://lh3.googleusercontent.com/P8W5YkipzvE02CjKpxql-jG3NJjQxunGYiIHLbptvDSyqy_ioAdsaywEbkSRjYWu8jKVcdSBLusH5VSL4jI_3AnU0mG62J1Rhj-RHHFyVCdysFZLW0PDy65oZM5gswsLo1K13Q23LdZSgZFMKg6YwbWHAWREvZEWR6Sx8TtFbuty6M_5TwDeXTyNuQowf0nxz7CwX03rU_mY2l1bgdHGUeJej1D-0nkqA2bs9hpJYsKmsBwQbw4ahhrzS8gsXtFu5Rxp2E1iFx0c-wjHQcs9-yryi28Neb7pWA3vRWynJn9tvwjPr-uvAxKHoWO_VqvBY-qiSs6bVtaNFePFk2PsWPwlmh7XXjI5jO0fBrOqhrahvrEtIYQXyV4C3yhJwa7qMInNfrPll9LZ-WhDEDC604fVFY1knjJ8r-biqzuT6aMvLfYZT5z9hphB3-YmWRvgqC5nPZwH2H9CohcTTlHRZvGRCs5Jlr27LzMrB34li7HvYnOBVsduBECQicm8oKzMEduZ5nwYNCWHOClt5tiAOJJHQeQdx1ZH0h1yhxU1a6emGELTUN1CGpiTSJWS2jY_4ef4RkV9flO3lZ6L5pQUtGymN8qQkIsgIpUFM6Wyi2tufYLaHmQ-AUXPqeLNxArsyrOnP23lEw0h05DDQP0ENvbNymB7DpQp7xpayxJ7nL444mcHYxDPGFPOJK_IDmMZrSIOUBn4EpaA0dRP7P0mlFOQjJutwJr-u5K1ZHK-QwsSjgjouV6T_Ek0ne8XIJvdnPZGVEb8BGb_DxV3Ice4KOQ88RRqQiHu9rY=w273-h346-no?authuser=0",
+      "idPlanet": 2
+    },
+    {
+      "id": 3,
+      "name": "R2-D2",
+      "description": "R2-D2, pronounced Artoo-Detoo and often referred to as R2 (Artoo), was an R2-series astromech droid manufactured by Industrial Automaton with masculine programming. A smart, spunky droid who would serve a multitude of masters over his lifetime, R2-D2 was never given a full memory wipe nor did he ever receive new programming, with these factors resulting in an adventurous and independent attitude. Often finding himself in pivotal moments in galactic history, his bravery and ingenuity saved the galaxy on numerous occasions.",
+      "avatar": "https://lh3.googleusercontent.com/cRFp_DZxQeoIJcqedEVF11lrjrspO2m_tNKfHCdKtBH69QVdWDQldHtHuzYdeqWULWf9m3LfgfWDTavsYvqWlFGDNEVkjrx4mkO01MCULkAHeq7n19BbR90nJhsGUw8LjEphqYli6sL4CRNJ6UhQdpMwBPQkHtK3rkQejhxQqx9CZk8aKNaTNzQUxWLDClPvthjYFUA66RFKTfEkJ7Ap1knQ25Hh16iydLhSOvVKNGPkM-BsMPk2lGg9G4TQtsRGDIs88vKOp8KSw34AOyMLHcj4Y48M6MZxIA_0kMhBagKmppJ3dBpna-r58ZwtmvpAO9xK3qFek4ctZaEXiBok5l8GyHWD_47uth2IyhmdEB0VwB3j7T0D0HLDUX4JijR161BzqBDygvWj4u-Wqp_Z85Xz-lk6A-IRp31YJTKGQCYK118M8cyY8thmG6aJdRJYwb1Qe3e9wtkDgMXCafM2hziJEX38mX62mtoOtlGrp24SF8uzmaq46668-OExuvFmatXWIvtyq-k_bVdGgY0gE11oRygZDUdW1SaSNEzqOz2B1lxzu-_raDlRmGPGhXLrryTwqz9QfJnGy8u1ZIFZZKDK0ZePl9AQO8-k6mg_P9BrJj4p2CHRn69GP1_CFO4dIJZLgX04KclcHpGnTpvwqxjJUv0oaVSo3RCi4P2Dey1WpjPUcfxjgcN4a_X_6v9FnNJg4vioGR87I4E_Xw38kdX1BB_7yi6yuQet9u1F0dLsVYqeyDyJ1t6NUlV1Z7luOZdmqobIBN_NNjMUYLw8PQYWwKGJmQieJuE=w216-h306-no?authuser=0",
+      "idPlanet": 3
+    },
+    {
+      "id": 5,
+      "name": "Darth Sidious",
+      "description": "arth Sidious, born Sheev Palpatine and also known simply as the Emperor, was a human male Dark Lord of the Sith and Emperor of the Galactic Empire, ruling from 19 BBY to 4 ABY. Rising to power in the Galactic Senate as the senator of Naboo, the secretive Sith Lord cultivated two identities, Sidious and Palpatine, using both to further his political career and deceive his way into accomplishing his goal. He orchestrated the fall of the Galactic Republic and the Jedi Order through the Clone Wars, and then established his reign over the galaxy which lasted until his death at the Battle of Endor. However, the dark side of the Force gave rise to powers which allowed the Emperor to return from the grave.",
+      "avatar": "https://lh3.googleusercontent.com/R5fO2O3AViQyzUt0n6x0FMnSeCHEbarc_2J1J09RBpvkcf_bwbNJeQ7VKXLrG9CKpWv_j6tIewhJWPlkeA4hL4K7-cQLk3IpCwAtj1WBCNxo6FYmwRlZcyLSvvz7yTZavT61YzC12r7WlE24OkTrSNKcFEOzBC3ZrmOOLAQGKdYlh7eb3db_TVjUY0yi0Ockee2ushclu7ZzdMEJSx1Uo9cPdZfD1uOg-G1DWApC4EIWbowIbQzmKlbvbJoz1iosXnIWV0MX62leIszT3S1282WFiaPyQI72CH97BIDzU0aEf4EGhS3AVb8mzwNHLBWGn1YpzGwb3Oqu7nWF4CTPVD85DqaoNaRIvKuGNORCYay2EUY5RNKTCIJQI3RXeyGfdEeD9ZPpsIc3lwOUzb0W56X2f4dDy732SdfOaa8yjl37yY6SF2NETT4qOgE6fe36BWVEs_C8OvrZt2P4gyljTByXYiZE90aeXY_2IURJwKtac3JqCFaONjradBmaJogd0qMBnCyOen-uHA6UlLK3CtdQYYHYYHRjYlb44oXt3JpDwQuCQut26Yz5Qe99S8yKKi6P7EmxSYO0HThGJxfIv6ZIlYWcZUT_eWvTkehmrrRQE2lLcnlRKcdxrfh1ZQoU1v7GZ9EpW0accBy8NwUVIYg412GUR75FXpzPPk4X3BvUBoAnovTH74rKq_lAmoA5gLEjFStu4hxYNONEPOM-3gmiB1zRPLNyH8MY8e-pPkJWk4urPNSmDZMIcKyU18Unqz5kPPNjLRh9eOQM6JpLX8561akxvoKkYdc=w245-h346-no?authuser=0",
+      "idPlanet": 3
+    },
+    {
+      "id": 6,
+      "name": "C-3PO",
+      "description": "C-3PO, sometimes spelled See-Threepio, often referred to as Threepio and by some as 3-So, was a 3PO-series protocol droid designed to interact with organics, programmed primarily for etiquette and protocol. He was fluent in over six million forms of communication, and developed a fussy and worry-prone personality throughout his many decades of operation. Along with his counterpart, the astromech droid R2-D2, C-3PO constantly found himself directly involved in pivotal moments of galactic history, and aided in saving the galaxy on many occasions.",
+      "avatar": "https://lh3.googleusercontent.com/aglQUYkmKxoOd_hBEuPJU-MBoueFqFF6R_YM3pOYV39Nt6QGTMq9HvXpoEt0eDj5jTNJsuCvNAps5A3qZbfbqZ1hXju2xcsZUUCuU9WOFWhTWAOBo8qUUJVZEB2D7-IraSGlJMUEEr6Jt5GaRx1w6-xLAyqhmz08NUNNfxM0wYj-C2twL85o9GbcpKNksMu1bLbEoiMRmfW3IYjBia03Qk-6HPJWSU-4JwiKchO2Zgsid0dHqglLW-G5b-xsM9dRZ5WxR77MoQMUSnDoFlwTLUQbFEThyC7xDugLIMlWM7-d7rjtP0fDmwDGy5gM1Qtn4fHoOTPxi0ggTHU6wePOEEGw0DgbCKu_FN_yhRVYw1NhKwpAIa5SoYq00iwoieoU11NbdULZRGNK0NdQmHAWXgZncjmtQDWntRf4vSTcqzwjASJgRz8zMoHNx53_6YcmayHi1DvIFl6Pm6g1LtH9DdUpDmlpuhpL0c-y7KgLZTtcJiANGs3oZJeSQVv3QVpvyFodB1erow5eKWm9rVgXI3CBZSUECDOGbIfKIdVmjmrZkNGfQFqHkUQgrZbMeASj9U71X2qULKilsr6qq-1McUaeZVsCqIhN8bU2fS0Ejs8-VMic0yR-9TCbgP0dYJ1mmie9bDr43sa6WxZ54_zvAscBCFyEMWvMCOSfvNaCUuF4kfVwfUEEl3FV9NAIruF-1IJH9lDiyK-ZTwZRSkKj0YXLC0ow40U7Ya1O4e6PkbQUTZQKV0HTZ-mK-TIHMCWmFuf2683XcTjecNc9IhpG5cRUeykpd2n289I=w360-h510-no?authuser=0",
+      "idPlanet": 1
+    },
+    {
+      "id": 6,
+      "name": "Luke Skywalker",
+      "description": "Luke Skywalker, a Force-sensitive human male, was a legendary Jedi Master who fought in the Galactic Civil War during the reign of the Galactic Empire. Along with his companions, Princess Leia Organa and General Han Solo, Skywalker served as a revolutionary on the side of the Alliance to Restore the Republic—an organization committed to the downfall of the Galactic Empire and the restoration of democracy. Following the war, Skywalker became a living legend, and was remembered as one of the greatest Jedi in galactic history.",
+      "avatar": "https://lh3.googleusercontent.com/zQQqN99X-TqunP4hpEo7opz5fqsL1eWxaOKDJWo4fVt_aLj7WumHNFL2qFMMC4DexYoq8sn_tuGzYRkKW0PpBI7JUr-ElxIWDFnAVFYKE3n9jkzug9AIhm0WTYQldtbnL0Br-8E1oXz-7lps9TNZHSOjYS9SkwTJQVPJczhzfQYjrtFEmLntpqwF_l_vCh6utPZx_S9ZwF_8G_L19S10HkwZxRizC_F-Iw-KskeupmQARXbjUwa-djYbbwYirOxhsEl4CxbjltCxUfliracavs_0B7uKPx-9OvKzZeTeM1iIbJdFCrzyE3HX7VQRH71FH-KAJUUZ99Rq314wxTjXjSUtzP0y378yQfgMuwUWRa1mB9aqOerPAbQDJOT-RvMvGRoCMHG4Ro-7Km4WvZI9MDXDQ_pFU6aFYMVD8qnw06Rii4UvzJoMw6Gv8iQ4Gvx8k_Id5kungafGm5HDi7PGwxriIe63XsDHeL3FFdTP5X888877tmKplTLPqiBxx1egt797E61qK1_BmPTXIRFPXSi5Nn4l_o9-UMgRTM-Jmx2eXDgJJvXv48zwhb7oyox9osUPVNMHEEgmPsIwgtmwU7yMn_GUCawAvw_1CY7fog7q2lK6xUrmZFladqh5j6gsgbUyPlQghiw8rO7dYHivBUSzkX1MWhF2Jtabb8J3rPw_hxXxaQ_cMTN58HxDVjH6U82OHvuIvQEFkvvJf3Jgwsq4MXxOf5JRA87yEfE6BIHwOqUhYa-7JI0dmLyHskm5bIks2CnIp6_oL_shMnEbkANbQhxu8XCzyXk=w717-h860-no?authuser=0",
+      "idPlanet": 1
+    },
+    {
+      "id": 8,
+      "name": "Anakin Skywalker",
+      "description": "A vergence in the Force, Skywalker was believed to have been born on the desert planet of Tatooine in the Outer Rim Territories in 41 BBY. He was the son of Shmi Skywalker, a slave who conceived a child without a father. His blood contained over twenty-thousand midi-chlorians, surpassing that of Grand Master Yoda and all other Jedi in the galaxy. Qui-Gon Jinn, the Jedi Master who discovered Skywalker during the Invasion of Naboo in 32 BBY, theorized that Skywalker was conceived by the midi-chlorians. Following the Battle of Naboo, the Jedi High Council admitted Skywalker into the Order as the Padawan of Jedi Knight Obi-Wan Kenobi despite feeling that he was too old and emotional to adhere to the Jedi Code. During the early days of the Clone Wars, Skywalker served as a Jedi General in the Grand Army of the Republic, commanding the clone troopers of the elite 501st Legion against the Confederacy of Independent Systems.",
+      "avatar": "https://lh3.googleusercontent.com/bNtKwhFL_wXsyQ9f1JTwxyMDIazJKT5E3Gy6f5VOMAWBkskM603z3aHucZtoansH674dlL1SgVa90LyUYD1DCMyLZ8qsLn57eW98djpjOB2H1oanO8kVqhBi50I9h3DlYAHBjDIPAVyPk2S_KNSxb6FCatA_wTJsLaboO5oJ0rHDdN9x_bxStrBPDRW0tNStDzypJVm-3nhudV7CgY3nG9ds9_SQja03KmI0pgS41aUqvx-Uia8sFkcuo4eWuN_NPW782SG8Ef-D6ClUs18EVD6w-C_IthK0hBkpmB4OflbwZMuQFesAYt-ZAFG3erLlEVl7NL0lW6tFCJD3PX0KojdzS1wRGeAAnCZJsb2c3MecgOjpzYfdkWa0talHwbOe4C7Fd6T8S0h-mjAXRZkbe2w-ZnW7cQb9n2Sb26KqLykW-k5d-Ea19wkq8fuY_VGFPIRFM5jur9AWrAmuLbjQmNrpScKixyeeWc370MWfaQtTkNp-XeD5BVR5a9_kSy-7c-Vy5LK5eMVL11PpeLdxth2ayB4MioF5Qa8cs8sH8HocM4G3TApCMXf5bLEWbp0x9kGGXDM-Xsvn1FTMFgGiFXcym-KBxgC6chJgUgTP46jo8ie6kJ_e4uBJ88rGoD6Iru3TYG5N-3pr8iWFuK6iJ9mJjHXzXSogFAzNNAc82vlNUMC9seORMZXZbTTgHPqOSqJZlYWieFoi7nVmxiHCRrUlDR6H5sDuD0HI_kr5E7XXNAecGnidFx3NEQvnbRqf1vxKZz91niE4dD5E5YuZhdhuU2Z3sA6KJdQ=w736-h548-no?authuser=0",
+      "idPlanet": 1
+    }
+  ],
+  "planets": [
+    {
+      "id": 1,
+      "name": "Tatooine",
+      "image": "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png/revision/latest/top-crop/width/360/height/450?cb=20131214162357"
+    },
+    {
+      "id": 2,
+      "name": "Coruscant",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Trantor-Coruscant.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Naboo",
+      "image": "https://static.wikia.nocookie.net/esstarwars/images/f/f0/Naboo_planet.png/revision/latest?cb=20190928214307"
+    }
+  ]
+}

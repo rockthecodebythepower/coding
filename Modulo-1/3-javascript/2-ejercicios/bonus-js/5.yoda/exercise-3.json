@@ -1,0 +1,68 @@
+{
+  "orders": [
+    {
+      "id": 22,
+      "date": "2020-11-22",
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "date": "2020-01-11",
+      "products": [
+        {
+          "productId": 3,
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "quantity": 1
+        },
+        {
+          "productId": 22,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": 422,
+      "date": "2020-01-22",
+      "products": [
+        {
+          "productId": 22,
+          "quantity": 2
+        },
+        {
+          "productId": 54,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Escudo del Capitán America"
+    },
+    {
+      "id": 3,
+      "name": "Lanzarredes de Peter"
+    },
+    {
+      "id": 22,
+      "name": "Ojo de Agamoto"
+    },
+    {
+      "id": 5,
+      "name": "Garras de Wolverine"
+    },
+    {
+      "id": 54,
+      "name": "Martillo de Thor"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.c-characters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-characters__item{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    height: 380px;
+    max-width: 100%;
+}
