@@ -1,0 +1,90 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Metal Gear Solid",
+      "year": 1998,
+      "cover": "https://assets.reedpopcdn.com/snakesubart.png",
+      "platform": "PlayStation"
+    },
+    {
+      "id": 2,
+      "title": "Metal Gear Solid 2: Sons of Liberty",
+      "year": 2001,
+      "cover": "https://d23gn3985hkc32.cloudfront.net/wp-content/uploads/2020/12/462257-yojiart2.jpg",
+      "platform": "PlayStation 2"
+    },
+    {
+      "id": 3,
+      "title": "Metal Gear Solid 3: Snake Eater",
+      "year": 2004,
+      "cover": "https://i.pinimg.com/originals/8a/54/a7/8a54a7c20562ea855b41696a5113215e.jpg",
+      "platform": "PlayStation 2"
+    },
+    {
+      "id": 4,
+      "title": "Metal Gear Solid 4: Guns of the Patriots",
+      "year": 2008,
+      "cover": "https://preview.redd.it/zhe63boh44i71.jpg?width=640&crop=smart&auto=webp&s=1cabc0bc6130d1086ef2b96a724c98331392ecd0",
+      "platform": "PlayStation 3"
+    },
+    {
+      "id": 5,
+      "title": "Metal Gear Solid V: Ground Zeroes",
+      "year": 2014,
+      "cover": "https://www.gematsu.com/wp-content/uploads/2014/02/MGSV-GI-March-Cover.jpg",
+      "platform": "PlayStation 4"
+    },
+    {
+      "id": 6,
+      "title": "Metal Gear Solid V: The Phantom Pain",
+      "year": 2015,
+      "cover": "https://pbs.twimg.com/media/FIqsukRXsAcB51f.jpg",
+      "platform": "PlayStation 4"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Solid Snake",
+      "quote": "Unfortunately, killing is one of those things that gets easier the more you do it.",
+      "image": "https://s.yimg.com/uu/api/res/1.2/hul50527fQjjLocMZwmfcw--~B/aD0zNjA7dz0yMjU7YXBwaWQ9eXRhY2h5b24-/https://www.blogcdn.com/www.joystiq.com/media/2008/03/codec030508.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Roy Campbell",
+      "quote": "SNAAAAAAAAKE!",
+      "image": "https://static.wikia.nocookie.net/metalgear/images/5/59/MGSCampbellCodec.png"
+    },
+    {
+      "id": 3,
+      "name": "Master Miller",
+      "quote": "The one thing we can never get enough of is love.",
+      "image": "http://vignette3.wikia.nocookie.net/metalgear/images/e/e1/MillerLiquidCodec.png/revision/latest?cb=20131222072936"
+    },
+    {
+      "id": 4,
+      "name": "Otacon",
+      "quote": "Better to be first among roosters than last among bulls.",
+      "image": "https://tcrf.net/images/9/94/MGS_PS1-Otacon-shaved.png"
+    },
+    {
+      "id": 5,
+      "name": "Meryl Silverburgh",
+      "quote": "Careful, I'm no rookie! ",
+      "image": "https://media4.giphy.com/media/xTiTnmdJZSF4oCx7RS/200w_s.gif?cid=8d8c0358uof13iwwgoswbl1otynh0is0hdufpb1g4v0kox1w&rid=200w_s.gif&ct=g"
+    },
+    {
+      "id": 6,
+      "name": "Mei Ling",
+      "quote": "Snake. That's a ladies bathroom.",
+      "image": "https://static.wikia.nocookie.net/metalgear/images/2/23/MGSMeiLingCodec.png"
+    },
+    {
+      "id": 7,
+      "name": "Liquid Snake",
+      "quote": "Ask the father that you killed. I'll send you to hell to meet him.",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/18a6b60c-6bd8-4fec-bd81-6b2c6f267b8f/d8qd72s-658706ae-9852-4d30-ade4-af748c814d1d.png/v1/fill/w_209,h_350,q_70,strp/liquid_portrait_6_by_meadmike_d8qd72s-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAzIiwicGF0aCI6IlwvZlwvMThhNmI2MGMtNmJkOC00ZmVjLWJkODEtNmIyYzZmMjY3YjhmXC9kOHFkNzJzLTY1ODcwNmFlLTk4NTItNGQzMC1hZGU0LWFmNzQ4YzgxNGQxZC5wbmciLCJ3aWR0aCI6Ijw9MzAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.nl0a6ikuGvvD2HtMddO-Sj93svMY-k8_uC2-NdKDNpA"
+    }
+  ]
+}

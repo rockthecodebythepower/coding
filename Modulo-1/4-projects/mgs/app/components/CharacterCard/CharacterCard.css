@@ -1,0 +1,12 @@
+.character {
+  border: 1px solid var(--codec);
+  height: 100%;
+  width: 120px;
+  overflow: hidden
+}
+
+.character > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

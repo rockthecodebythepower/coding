@@ -1,0 +1,13 @@
+.card{
+    padding: 2rem 1rem;
+    transition: padding 0.8s ease-in-out;
+}
+
+.card:hover{
+    padding: 8rem 1rem;
+}
+
+.card > .description{
+    background-color: var(--transparent);
+    padding: 2rem;
+}

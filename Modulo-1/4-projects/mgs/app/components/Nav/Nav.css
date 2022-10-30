@@ -1,0 +1,20 @@
+nav {
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav > ul{
+    display: flex;
+    gap: 5rem;
+}
+
+nav > ul > li > a {
+    transition: all 0.3s ease-in-out;
+}
+
+nav > ul > li > a:hover{
+    color: var(--primary);
+}

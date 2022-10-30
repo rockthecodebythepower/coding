@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --background: #303030;
+  --transparent: #303030ee;
+  --primary: #dedede;
+  --secondary: #d9050b;
+  --codec: #04fb8ca7;
+  --codec-background: #000000;
+}
+
+@font-face {
+  font-family: "Metal";
+  src: url("/fonts/METAG___.TTF");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Metal2";
+  src: url("/fonts/MGS2.ttf");
+  font-display: block;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: "VT323", monospace;
+}
+
+.light {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Metal2", sans-serif;
+  color: var(--secondary);
+  letter-spacing: 0.4rem;
+}
+
+button{
+  all:unset;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--background);
+  border: 1px solid var(--codec);
+  color: var(--primary);
+  cursor: pointer
+}

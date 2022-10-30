@@ -1,0 +1,70 @@
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.upper-codec {
+  display: flex;
+  width: 90vw;
+  height: 50vh;
+  border: 1px solid var(--codec);
+  background-color: var(--codec-background);
+}
+
+.left,
+.right {
+  width: 20%;
+  border: 1px solid var(--codec);
+  background-color: var(--codec);
+  margin: 1.4rem;
+}
+
+.left {
+  background-image: url("https://s.yimg.com/uu/api/res/1.2/hul50527fQjjLocMZwmfcw--~B/aD0zNjA7dz0yMjU7YXBwaWQ9eXRhY2h5b24-/https://www.blogcdn.com/www.joystiq.com/media/2008/03/codec030508.jpg");
+  background-size: cover 120%;
+  background-position: center center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-image: url("/images/codec.gif");
+  background-size: cover 80%;
+  background-position: center center;
+  border: 1px solid var(--codec);
+  background-repeat: no-repeat;
+}
+
+.center > input{
+  all: unset;
+  width: 80%;
+  padding: 1rem;
+  background-color: var(--codec-background);
+  border: 1px solid var(--codec);
+  text-align: center;
+  color: var(--codec);
+  font-size: 2rem;
+}
+
+.lower-codec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--codec);
+  width: 90vw;
+  height: 20vh;
+  background-color: var(--codec-background);
+}
+
+.character-gallery {
+  height: 20vh;
+  border: 1px solid var(--codec);
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+}
