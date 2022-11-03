@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>08: A log in form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>
-    08: A log in form
-  </title>
-</head>
-
-<body>
-  <header>
-    <h1>
-      Hello again!
-    </h1>
-  </header>
-  <main>
+  <body>
     <header>
-      <h2>Log in</h2>
-      <p>Please log in before accessing our website</p>
+      <h1>Hello again!</h1>
     </header>
+    <main>
+      <header>
+        <h2>Log in</h2>
+        <p>Please log in before accessing our website</p>
+      </header>
 
-    <!-- Add your log in form here -->
-
-  </main>
-</body>
-
+      <!-- Add your log in form here -->
+      <form action="/log-in" method="post">
+        <label>
+          <p>Email:</p>
+          <input id="POST-email" type="email" name="username" required />
+        </label>
+        <label>
+          <p>Password:</p>
+          <input
+            id="POST-password"
+            type="password"
+            name="contraseña"
+            required
+          />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
 </html>
