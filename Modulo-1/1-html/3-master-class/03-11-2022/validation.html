@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validations</title>
+    <link rel="stylesheet" href="./validation.css" />
+  </head>
+  <body>
+    <h1>Validación de formularios</h1>
+
+    <form>
+      <input name="terms" id="terms" type="checkbox" required />
+      <label for="terms">Acepto términos y condiciones</label>
+
+      <br>
+
+      <label for="dni">Introduce tu código de estudiante:</label>
+      <input type="number" required placeholder="DNI" name="dni" id="dni" />
+
+      <br>
+
+      <label for="student-code">Introduce tu código de estudiante:</label>
+      <input
+        type="text"
+        name="student-code"
+        id="student-code"
+        placeholder="#1234"
+        required
+        minlength="4"
+        maxlength="4"
+        pattern="[0-9]{4}"
+      />
+
+      <br>
+
+      <label>
+        <p>Introduce tu nombre:</p>
+        <input type="text" name="student-name" id="student-name" placeholder="Juan" required minlength="2" />
+      </label>
+
+      <br>
+      <button type="submit">Enviar!</button>
+    </form>
+  </body>
+</html>
