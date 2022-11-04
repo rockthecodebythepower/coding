@@ -1,0 +1,16 @@
+{
+  "name": "json-server-next-rooms",
+  "version": "1.0.0",
+  "description": "Mock API for Next Rooms exercise",
+  "main": "db.json",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server db.json -p 4200"
+  },
+  "keywords": [],
+  "author": "rockthecode",
+  "license": "MIT"
+}
