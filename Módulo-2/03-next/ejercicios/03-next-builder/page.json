@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "Next Builder Challenge",
+    "description": "We'll build the future of webpages with Next and JSON files",
+    "author": "ENTER_YOUR_NAME"
+  },
+  "body": [
+    {
+      "id": "hero_section",
+      "tag": "section",
+      "structure": [
+        {
+          "tag": "h1",
+          "text": "Next Builder Challenge"
+        },
+        {
+          "tag": "p",
+          "text": "We are building this page using a JSON file and Next.js. This is the definitive site builder system!"
+        },
+        {
+          "tag": "img",
+          "alt": "hero image",
+          "url": "https://nextjs.org/_next/image?url=%2Fstatic%2Fconf-22%2Fprism-light-colorful.jpg&w=1080&q=100"
+        }
+      ]
+    },
+    {
+      "id": "marketing_section",
+      "tag": "section",
+      "structure": [
+        {
+          "id": "article_1",
+          "tag": "article",
+          "structure": [
+            {
+              "tag": "h2",
+              "text": "Super efficient"
+            },
+            {
+              "tag": "p",
+              "text": "This is build using static site generation, faster than light!"
+            }
+          ]
+        },
+        {
+          "id": "article_2",
+          "tag": "article",
+          "structure": [
+            {
+              "tag": "h2",
+              "text": "Maintainable"
+            },
+            {
+              "tag": "p",
+              "text": "This can be maintained without knowing how to code, just handle and change a JSON file to create new things"
+            }
+          ]
+        },
+        {
+          "id": "article_3",
+          "tag": "article",
+          "structure": [
+            {
+              "tag": "h2",
+              "text": "Scalable"
+            },
+            {
+              "tag": "p",
+              "text": "You'll be able to generate infinite number of pages easily and scale Next to the next level"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video_section",
+      "tag": "section",
+      "structure": [
+        {
+          "tag": "h2",
+          "text": "Watch coding videos and become a top Full Stack developer"
+        },
+        {
+          "tag": "p",
+          "text": "Follow people like Fireship to create incredible projects and learn like crazy about programming news and technologies."
+        },
+        {
+          "tag": "video",
+          "url": "https://www.youtube.com/watch?v=pEfrdAtAmqk"
+        }
+      ]
+    }
+  ]
+}
