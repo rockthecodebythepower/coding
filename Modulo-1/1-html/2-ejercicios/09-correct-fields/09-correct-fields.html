@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-      09: Choosing the correct field
-    </title>
-    <link rel="stylesheet" href="forms.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>09: Choosing the correct field</title>
+    <link rel="stylesheet" href="forms.css" />
   </head>
   <body>
     <header>
-      <h1>
-        Choosing the correct field
-      </h1>
-      <p>Please create the right HTML form field(s) for each <code>fieldset</code> below</p>
+      <h1>Choosing the correct field</h1>
+      <p>
+        Please create the right HTML form field(s) for each
+        <code>fieldset</code> below
+      </p>
     </header>
     <nav>
       <ul>
@@ -31,26 +30,32 @@
         </header>
         <fieldset>
           <legend>Simple text: Nickname</legend>
+          <input type="text" id="nickname" name="nickname" />
           <!-- The server is expecting plain text here with the `name` of `nickname`. Linebreaks aren't allowed. -->
         </fieldset>
         <fieldset>
           <legend>Multi-line Text: Biography</legend>
+          <textarea name="biography" cols="40" rows="5"></textarea>
           <!-- The server is expecting paragraphs of text here to act as the `biography` field. Linebreaks need to be saved. -->
         </fieldset>
         <fieldset>
           <legend>Mobile phone number</legend>
+          <input type="tel" id="mobile_phone" name="mobile_phone" />
           <!-- The server is expecting the user's `mobile_phone` here. -->
         </fieldset>
         <fieldset>
           <legend>Website</legend>
+          <input type="url" id="website" name="website" />
           <!-- The server is expecting the user's `website` address here. -->
         </fieldset>
         <fieldset>
           <legend>Date of birth</legend>
+          <input type="date" id="date_of_birth" name="date_of_birth" />
           <!-- The server is expecting the user's `date_of_birth` here. -->
         </fieldset>
         <fieldset>
           <legend>Age</legend>
+          <input type="number" name="age" id="age" min="1" max="150" />
           <!-- The server is expecting the user's `age` in years here. -->
         </fieldset>
         <div>
@@ -64,15 +69,31 @@
         </header>
         <fieldset>
           <legend>True / False, with a default choice</legend>
+          <input
+            type="radio"
+            id="trueRadio"
+            name="choice"
+            value="true"
+            checked
+          />
+          <label for="trueRadio">True</label>
+
+          <input type="radio" id="falseRadio" name="choice" value="false" />
+          <label for="falseRadio">False</label>
           <!-- The server is expecting a choice between `true` and `false` only. Set it to `true` by default. -->
         </fieldset>
         <fieldset>
           <legend>Confirm</legend>
           <!-- The server is expecting a specific name/value pair of `confirm=true` that the user can confirm, or nothing in its place. -->
-          <input type="checkbox" name="confirm" value="true">
+          <input type="checkbox" name="confirm" value="true" />
         </fieldset>
         <fieldset>
           <legend>Yes or No</legend>
+          <input type="radio" id="yesRadio" name="agree" value="yes" />
+          <label for="yesRadio">Yes</label>
+
+          <input type="radio" id="noRadio" name="agree" value="no" />
+          <label for="noRadio">No</label>
           <!-- The server is expecting a value of `yes`, or `no` for the `agree` field. -->
         </fieldset>
         <div>
@@ -86,6 +107,12 @@
         </header>
         <fieldset>
           <legend>Small list of values</legend>
+          <select name="fruit" id="fruit">
+            <option value="apples">Apples</option>
+            <option value="bananas">Bananas</option>
+            <option value="grapes">Grapes</option>
+            <option value="plums">Plums</option>
+          </select>
           <!--
             The server is expecting one of the following values for `fruit`:
 
@@ -97,6 +124,16 @@
         </fieldset>
         <fieldset>
           <legend>Large list of values</legend>
+          <select name="birds" id="birds">
+            <option value="duck">Ducks</option>
+            <option value="eagle">Eagles</option>
+            <option value="heron">Herons</option>
+            <option value="gull">Gulls</option>
+            <option value="pigeon">Pigeons</option>
+            <option value="raven">Ravens</option>
+            <option value="robin">Robins</option>
+            <option value="swallow">Swallows</option>
+          </select>
           <!--
             The server is expecting one of the following values for `birds`:
 
@@ -121,6 +158,12 @@
         </header>
         <fieldset>
           <legend>Small list of values</legend>
+          <select name="fruit" id="fruit" multiple>
+            <option value="apples">Apples</option>
+            <option value="bananas">Bananas</option>
+            <option value="grapes">Grapes</option>
+            <option value="plums">Plums</option>
+          </select>
           <!--
             The server is expecting one or more of the following values for `fruit`:
 
@@ -132,6 +175,16 @@
         </fieldset>
         <fieldset>
           <legend>Large list of values</legend>
+          <select name="birds" id="birds" multiple>
+            <option value="duck">Ducks</option>
+            <option value="eagle">Eagles</option>
+            <option value="heron">Herons</option>
+            <option value="gull">Gulls</option>
+            <option value="pigeon">Pigeons</option>
+            <option value="raven">Ravens</option>
+            <option value="robin">Robins</option>
+            <option value="swallow">Swallows</option>
+          </select>
           <!--
             The server is expecting one or more of the following values for `birds`:
 
@@ -150,30 +203,44 @@
         </div>
       </form>
 
-      <form action="#form_other" method="GET" id="form_other" enctype="multipart/form-data">
+      <form
+        action="#form_other"
+        method="GET"
+        id="form_other"
+        enctype="multipart/form-data"
+      >
         <header>
           <h2>Other form fields</h2>
         </header>
         <fieldset>
           <legend>Hidden</legend>
+          <input id="signed" name="signed" type="hidden" value="true" />
           <!--
             The server is expecting a hidden `signed=true` pair here.
           -->
         </fieldset>
         <fieldset>
           <legend>File(s)</legend>
+          <input
+            type="file"
+            id="photos"
+            name="photos"
+            accept="image/png, image/jpeg"
+          />
           <!--
             The server is expecting at least one file here, with the name of `photos`.
           -->
         </fieldset>
         <fieldset>
           <legend>Range</legend>
+          <input type="range" id="bearing" name="bearing" min="0" max="359" />
           <!--
             The server is expecting at a numerical value for `bearing` between 0 and 359
           -->
         </fieldset>
         <fieldset>
           <legend>Colour</legend>
+          <input type="color" id="background_colour" name="background_colour" />
           <!--
             The server is expecting at a colour value for `background_colour`
           -->
