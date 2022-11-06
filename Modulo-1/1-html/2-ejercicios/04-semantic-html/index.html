@@ -7,34 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body>
-  <div class="site-wrapper">
-    <div class="site-header">
-      <div class="site-header__title">Messages</div>
-    </div>
-    <div class="messages">
-      <div class="message">
-        <div class="message__author">Won</div>
-        <p class="message__content">Where should we meet later?</p>
-        <span class="message__time">Mar 25, 2018 7:25pm</span>
-      </div>
-      <div class="message">
-        <div class="message__author">Luke</div>
-        <p class="message__content">
-          Let's meet at the iCafe in Merchant City. https://goo.gl/maps/aza4h9nUBhn
-        </p>
-        <span class="message__time">Mar 25, 2018 7:35pm</span>
-      </div>
-      <div class="message">
-        <div class="message__author">Won</div>
-        <p class="message__content">
-          Ok! https://media.giphy.com/media/l41K4KlVE8dgozf8I/giphy.gif
-        </p>
-        <span class="message__time">Mar 25, 2018 7:38pm</span>
-      </div>
-    </div>
-    <div id="result" class="result"></div>
-  </div>
+<body class="site-wrapper">
+
+    <header role="banner" class="site-header">
+      <h1 class="site-header__title">Messages</h1>
+    </header>
+
+    <main role="main" class="messages">
+      <article class="message">
+        <section class="message__author">Won</section>
+        <section class="message__content">Where should we meet later?</section>
+        <time class="message__time" datetime="2018-03-25 19:25">Mar 25, 2018 7:25pm</time>
+      </article>
+      <article class="message">
+        <section class="message__author">Luke</section>
+        <section class="message__content">
+          Let's meet at the <a href="https://goo.gl/maps/aza4h9nUBhn">iCafe</a> in Merchant City.
+        </section>
+        <time class="message__time" datetime="2018-03-25 19:35">Mar 25, 2018 7:35pm</time>
+      </article>
+      <article class="message">
+        <section class="message__author">Won</section>
+        <section class="message__content">
+          Ok! <img src="https://media.giphy.com/media/l41K4KlVE8dgozf8I/giphy.gif">
+        </section>
+        <time class="message__time" datetime="2018-03-25 19:38">Mar 25, 2018 7:38pm</time>
+      </article>
+    </main>
+
+    <aside id="result" class="result"></aside>
 </body>
 
 </html>
