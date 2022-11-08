@@ -1,0 +1,15 @@
+.color-name {
+  color: violet;
+}
+
+.color-rgb {
+  color: rgb(244, 80, 80);
+}
+
+.color-rgba {
+  color: rgba(244, 80, 80, 0.533);
+}
+
+.color-hexadecimal {
+  color: #fabada;
+}
