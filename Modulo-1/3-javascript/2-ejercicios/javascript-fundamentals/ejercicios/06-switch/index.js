@@ -1,4 +1,4 @@
-function main(customValue) {
+function main(customValue, customCoin) {
   var ex1 = '';
   var ex2 = 0;
   // Antes de comenzar, considera que tendrás disponible las variables customValue y customCoin,
