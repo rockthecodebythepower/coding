@@ -23,8 +23,8 @@ Edita un fichero index.html para aplicarle la clase **.small** a los dos párraf
 	</head>
 
 	<body>
-		<p>Hello!</p>
-		<p>Rocker!</p>
+		<p class="small">Hello!</p>
+		<p class="small">Rocker!</p>
 	</body>
 </html>
 ```

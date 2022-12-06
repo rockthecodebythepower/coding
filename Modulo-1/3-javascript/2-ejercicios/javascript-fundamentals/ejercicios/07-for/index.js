@@ -1,4 +1,4 @@
-function main(customString, customNumber) {
+function main(customString = '', customNumber) {
   var ex1 = 0;
   var ex2 = 0;
   // Antes de comenzar, considera que tendrás disponible la variables customString y customNumber,
@@ -9,10 +9,10 @@ function main(customString, customNumber) {
   // cualquiera de las vocales 'a', 'e', 'i', 'o', 'u'
   // Por ejemplo: Si customString es alpaca => ex1 debe valer 3 porque hay 3 letras a
   // Otro ejemplo: Si customString es clarinete => ex1 debe valer 4 porque hay 4 vocales
-  for (let i = 4; i < customString.length; i++) {
+  for (let i = 0; i < customString.length; i++) {
     var letter = customString[i];
 
-    if (letter === 'a' || letter === 'e') {
+    if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
       ex1 += 1;
     }
   }
