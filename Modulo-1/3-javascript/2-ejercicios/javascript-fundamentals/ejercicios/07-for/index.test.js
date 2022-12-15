@@ -23,10 +23,10 @@ describe('Ejercicios sobre bucles for', () => {
   it('2 - Para customNumber 7, ex2 debe valer 8', () => {
     expect(index.main('', 8).ex2).toBe(8);
   });
-  it('2 - Para customNumber 10, ex2 debe valer 4', () => {
+  it('2 - Para customNumber 10, ex2 debe valer 10', () => {
     expect(index.main('', 10).ex2).toBe(10);
   });
-  it('2 - Para customNumber 19, ex2 debe valer 4', () => {
-    expect(index.main('', 19).ex2).toBe(19);
+  it('2 - Para customNumber 19, ex2 debe valer 20', () => {
+    expect(index.main('', 19).ex2).toBe(20);
   });
 });
