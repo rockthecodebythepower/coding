@@ -2,15 +2,23 @@
 // y un string "property", completa la función para que recorra dicho array con un
 // bucle e invoque un console.log con la propiedad "property" de cada objeto
 const printPersons = (persons, property) => {
-  // Completa el código ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
-  // Completa el código ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+  for (let i = 0; i < persons.lenght; i++) {
+    console.log(persons[i][property]);
+  }
+
 };
 
 // 2. Crea la función addProperty para que reciba un objeto, una propiedad y valor nuevos,
 // y un boolean. Si el boolean es true, que cree una copia de dicho objeto, añada la
 // nueva propiedad + valor y lo retorne. Si el boolean es false, que retorne directamente
 // el mismo objeto (misma referencia)
-const addProperty = () => {};
+const addProperty = (obj, key, value, boolean) => {
+  if (boolean == true){
+    const copyObj = Object.assign({}, obj);
+    copyObj[key] = value;
+    return copyObj;
+  }else return obj;
+ }
 
 // 3. Crea la función getPeopleWeight para que reciba un array con [clave, valor,...]
 // donde "clave" es el nombre de las personas y "valor" su peso en kg, y devuelva
