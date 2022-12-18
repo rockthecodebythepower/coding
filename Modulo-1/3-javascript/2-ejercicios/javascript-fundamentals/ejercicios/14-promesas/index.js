@@ -1,8 +1,15 @@
 // 1. Asigna a la variable "promise" una promesa que se resuelva con el string "me he resuelto!"
-var promise;
+const promise = new Promise((resolve, reject) => {
+  console.log (`${resolve("me he resuelto")}`);
+  reject("tio en Alcala ni tio ni ná");
+});
+//promise.then((value) => { console.log(value) });
+promise.catch((error) => { console.log(error) });
 
 // 2. Asigna a la variable "promiseError" una promesa que se rechace con el string "me han rechazado!"
-var promiseError;
+const promiseError = new Promise((reject) => {
+  console.log (`${reject("me han rechazado")}`);
+});
 
 // 3. Dada la función "resolvePasta", completa la función "getPasta" para que invoque a
 // la función "resolvePasta" con el argumento "pasta" y luego la resuelva (.then) invocando
@@ -11,8 +18,11 @@ const resolvePasta = (pasta) => new Promise((resolve) => resolve(pasta));
 
 const getPasta = (pasta) => {
   // Completa el código ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
-  // Completa el código ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+  resolvePasta(pasta)
+  .then((toConsole) => console.log(toConsole));
 };
+  // Completa el código ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+
 
 // --EXTRA-- Dada la función "getAnimals", completa la promesa .then dentro de la función
 // addAnimals para que añada al final del array el animal "tiger". Luego resuelve dicha

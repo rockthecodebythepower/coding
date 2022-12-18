@@ -28,7 +28,7 @@ describe('Ejercicios de Objetos-Funciones', () => {
   it('espero encontrar una función "getPeopleWeight" que devuelva un objeto con clave el nombre de las personas y valor el peso de las mismas y que solo muestre las que su peso sea par y superior a 60kg', () => {
     expect(index.getPeopleWeight).not.toBeUndefined();
     const peopleArr = ['Juan', 73, 'Maria', 64, 'Martin', 74, 'Sofia', 55];
-    const expectedObj = { Martin: 74, Maria: 64 };
+    const expectedObj = { Maria: 64, Martin: 74 };
     const peopleObj = index.getPeopleWeight(peopleArr);
     expect(peopleObj).toEqual(expectedObj);
   });
