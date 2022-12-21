@@ -10,6 +10,7 @@ Hemos visto en el contenido en video del máster que `React` se trabaja utilizan
 2. Crea ahora un proyecto de React aquí dentro, en la carpeta `general`, utilizando Vite con el comando `npm create vite@latest`. Llama al proyecto `01-jsx-interpolacion`, practicamente como este archivo pero sin la extensión `.md`.
 3. Entra en la carpeta de tu proyecto con `cd 01-jsx-interpolacion` e instala las dependencias para que tu proyecto funcione con `npm install`.
 4. Ahora corre tu proyecto en modo desarrollo en la terminal con `npm run dev`. Deberías ver una URL en la terminal parecida a `http://localhost:5173`, pégala en Chrome y ya tendrás tu proyecto de React corriendo en tu navegador 🎸
+5. Antes de comenzar a trabajar con el ejercicio, recuerda ir al archivo `App.jsx` y "limpiar el componente", es decir, haz que el `return` del componente se simplifique al máximo y devuelva esto: `<div><h1>Título</h1></div>.
 
 ## Enunciado
 
