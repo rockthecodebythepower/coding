@@ -244,8 +244,6 @@ Y así quedaría nuestro componente `<Hero/>` renderizado:
 
 <div align="center"><img src="../../../../README/use-state.png"/></div>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92d4d6b2-8fd8-41d6-a5a3-5ca4515efac5/Untitled.png)
-
 Usando la misma lógica, vamos a cumplimentar el resto de componentes recibiendo la información del prop deseado. Cuando tengamos `arrays` tendremos que mapear la información para pintar los datos correctamente. 
 
 Un ejemplo de este caso es el componente `<Education />`:
