@@ -1,4 +1,4 @@
-Dado el siguiente javascript filtra los videojuegos por gender = 'Aventura' usando .filter() y usa .reduce() para conseguir la media de sus .score. La función .find() también podría ayudarte para el contrar el genero 'Aventura' en el array .gender.
+Dado el siguiente javascript filtra los videojuegos por gender = 'Aventura' usando .filter() y usa .reduce() para conseguir la media de sus .score. La función .find() también podría ayudarte para el contrar el género 'Aventura' en el array .gender.
 
 ```js
 const videogames = [
