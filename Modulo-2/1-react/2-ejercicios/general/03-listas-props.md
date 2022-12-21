@@ -1,4 +1,4 @@
-# 02 - Manejo de props
+# 03 - Uso de props en listas
 
 ## Preparación del ejercicio
 
