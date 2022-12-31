@@ -22,7 +22,7 @@ En el componente App, crea una barra de navegación con dos enlaces: uno que enl
 
 ```jsx
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 // Componentes
 const Home = () => <h1>Bienvenido a la página de inicio</h1>;
@@ -35,8 +35,10 @@ function App() {
         <Link to="/">Inicio</Link>
         <Link to="/about">Acerca de</Link>
       </nav>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </BrowserRouter>
   );
 }

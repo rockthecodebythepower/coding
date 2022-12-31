@@ -22,7 +22,7 @@ En el componente Private, comprueba el valor de la bandera en el almacenamiento 
 
 ```jsx
 import React from 'react';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Redirect } from 'react-router-dom';
 
 // Components
 const Login = () => {
@@ -62,8 +62,11 @@ const Private = () => {
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/login" component={Login} />
-      <Route path="/private" component={Private} />
+    <Routes>
+      <Route exact path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/private" element={<Private />} />
+    </Routes>
     </BrowserRouter>
   );
 }
