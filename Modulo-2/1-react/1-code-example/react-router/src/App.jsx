@@ -19,7 +19,7 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <footer>Created by RockTheCode wit 💕</footer>
+      <footer>Created by RockTheCode with 💕</footer>
 
     </div>
   )
