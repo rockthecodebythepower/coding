@@ -24,7 +24,7 @@ Envuelve tu aplicación como hiciste en el ejercicio anterior usando React Route
 - Crea un `Route` para la ruta `/login` que contenga el componente `Login` que has creado para autenticación.
 - Crea un `Route` para la ruta `/private` que contenga el componente `Private`.
 
-Añade ahora lógica en el componente `Private` para recoger el valor `authenticated` de `LocalStorage` y comprobar que sea `"true"`. Usando esta comprobación, haz que el componente `Private` devuelva el JSX que habíamos creado si esta comprobación es `true`, o devuelve un componente `Redirect` que saque al usuario de `/private` y lo mande a `/login` si la comprobación es `false`.
+Añade ahora lógica en el componente `Private` para recoger el valor `authenticated` de `LocalStorage` y comprobar que sea `"true"`. Usando esta comprobación, haz que el componente `Private` devuelva el JSX que habíamos creado si esta comprobación es `true`, o devuelve un componente `Navigate` que saque al usuario de `/private` y lo mande a `/login` si la comprobación es `false`.
 
 ```jsx
 // Para comprobar si el usuario se ha autenticado:
@@ -32,7 +32,7 @@ const isAuthenticated =
   localStorage.getItem('authenticated') === 'true';
 
 // En caso de que isAuthenticated sea false, el componente Private devolverá:
-return <Redirect to="/login" />;
+return <Navigate to="/login" />;
 ```
 
 > Con esto habrás creado tu primer ejercicio donde comprobarás que el usuario se ha autenticado correctamente 🚀 y tendrás una página privada solo para usuarios que se han autenticado.
@@ -41,4 +41,4 @@ return <Redirect to="/login" />;
 
 Investiga como eliminar valores de `LocalStorage` usando `JavaScript` y crea un botón en el componente `Private` que permita al usuario hacer `Logout`.
 
-Recuerda que cambiar un valor de `LocalStorage` no producirá un rerender, por lo que es posible que tengas que usar un estado como apoyo para almacenar si el usuario está o no autenticado, y que el `Redirect` que tenemos creado funcione correctamente!
+Recuerda que cambiar un valor de `LocalStorage` no producirá un rerender, por lo que es posible que tengas que usar un estado como apoyo para almacenar si el usuario está o no autenticado, y que el `Navigate` que tenemos creado funcione correctamente!
