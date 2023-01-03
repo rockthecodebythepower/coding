@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.lightbulb {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.off {
+  background-color: grey;
+}
+
+.on {
+  background-color: yellow;
+}
