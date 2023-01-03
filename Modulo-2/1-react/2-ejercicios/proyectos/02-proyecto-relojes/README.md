@@ -64,7 +64,7 @@ La constante `date` recoge la información de la hora local a través del métod
 
 De esta manera, con unos `estilos` de css muy básicos y retornando el valor de `clockState` tendremos nuestra hora reflejada segundo a segundo, tal y como funciona un reloj digital: 
 
-<div align="center"><img src="../../../../README/relojes-1.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-1.gif"/></div>
 
 **Cuenta atrás**
 ---
@@ -187,7 +187,7 @@ La medida que siempre utilizamos es segundos, por eso los math.floor se utilizan
 
 Solo nos quedaría llamar al valor de `time` en nuestro `return` y tendremos la cuenta atrás funcionando:
 
-<div align="center"><img src="../../../../README/relojes-2.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-2.gif"/></div>
 
 **Cronómetro**
 
@@ -229,7 +229,7 @@ const Stopwatch = () => {
 };
 ```
 
-<div align="center"><img src="../../../../README/relojes-3.png"/></div>
+<div align="center"><img src="../../../../../README/relojes-3.png"/></div>
 
 Vayamos por partes:
 
@@ -278,7 +278,7 @@ Por otra parte, en el condicional tenemos el `else` para que si `timerOn` no est
 
 Una vez realizados estos pasos podremos ver que nuestro cronómetro arranca, se detiene y se reinicia:
 
-<div align="center"><img src="../../../../README/relojes-count.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-count.gif"/></div>
 
 Nos faltaría formatear el tiempo en minutos, segundos y centésimas (de manera similar a como lo hicimos en la cuenta atrás), y ocultar o mostrar algunos de los botones según la acción que estemos realizando.
 
@@ -300,7 +300,7 @@ También hemos hecho uso de `.slice` para, una vez tengamos el valor máximo de 
 
 De esta forma los marcadores siempre tendrán dos dígitos pese a que el valor acumulado en cada ellos vaya aumentando. Con esto y utilizando `":"` como separador ya tendremos nuestro display funcionando perfectamente:
 
-<div align="center"><img src="../../../../README/relojes-crono.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-crono.gif"/></div>
 
 Lo único que nos queda es ocultar y mostrar los botones de nuestro cronómetro según necesitemos. Para ello vamos a utilizar condicionales:
 
@@ -329,8 +329,8 @@ El botón `Stop` aparecerá una vez `timerOn` sea true y el valor de `time` sea 
 
 Y con este condicional tendremos nuestro cronómetro completamente funcional y listo para batir las mejores marcas:
 
-<div align="center"><img src="../../../../README/relojes-7.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-7.gif"/></div>
 
 Si invocamos nuestros 3 componentes en `App.jsx` tendremos una aplicación completa y preparada para controlar el tiempo de 3 formas distintas.
 
-<div align="center"><img src="../../../../README/relojes-8.gif"/></div>
+<div align="center"><img src="../../../../../README/relojes-8.gif"/></div>
