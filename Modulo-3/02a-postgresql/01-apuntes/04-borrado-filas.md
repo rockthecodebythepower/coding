@@ -5,7 +5,7 @@ Ahora que sabemos escribir y leer en nuestra base de datos, toca aprender a borr
 - Para borrar un elemento de una tabla, usaremos la cláusula `DELETE`:
 
 ```sql
-DELETE FROM ppublic.athletes
+DELETE FROM public.athletes
 WHERE id = 6;
 ```
 
@@ -14,7 +14,7 @@ WHERE id = 6;
 - Ten cuidado usando `DELETE` sin especificar la cláusula `WHERE` o borrarás toda la tabla completa 😱
 
 ```sql
-DELETE FROM ppublic.athletes;
+DELETE FROM public.athletes;
 ```
 
 > Esta query borarrá toda la información de la tabla `athletes`.
