@@ -5,14 +5,14 @@ Para completar este ejercicio debes haber visto al menos el contenido en video h
 - Crear tablas y estructurar columnas.
 - Crear, leer, editar y borrar elementos (CRUD).
 
-Sabiendo el significado de estos conceptos y habiendo visto como los usamos, vamos a proponerte el siguiente ejericio.
+Sabiendo el significado de estos conceptos y habiendo visto como los usamos, vamos a proponerte el siguiente ejercicio.
 
 ## Enunciado
 
 Antes de comenzar, ten en cuenta que tienes diferentes opciones para preparar tu base de datos, elige la que más cómoda te resulte. Esto aplicará a todos los ejercicios que sigan a este mismo:
 
 - Puedes crear una nueva base de datos y trabajar en su esquema `public`.
-- Puedes crear un nuevo esquema en la base de datos con el nombre del ejericio `crud` y trabajar dentro.
+- Puedes crear un nuevo esquema en la base de datos con el nombre del ejercicio `crud` y trabajar dentro.
 - Puedes aprovechar el esquema `public` de tu actual base de datos y crear las tablas que te hagan falta.
 
 ---
@@ -69,7 +69,7 @@ Para terminar, vas a crear una query que borre todos los elementos de la tabla `
 
 ## Bonus
 
-Una vez hayas completado el ejericio, te dejamos un bonus para que investigues el uso de las `CONSTRAINT` al crear tablas.
+Una vez hayas completado el ejercicio, te dejamos un bonus para que investigues el uso de las `CONSTRAINT` al crear tablas.
 
 Modifica la query de creación de la tabla `pokemon` de forma que haya una condición que especifique que `type_1` y `type_2` para un mismo elemento no pueden ser iguales.
 
