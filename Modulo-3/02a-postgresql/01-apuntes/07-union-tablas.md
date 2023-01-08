@@ -1,4 +1,4 @@
-# 07 - Video Unión de tablas
+# 07 - Video | Unión de tablas
 
 Cuando tenemos varias tablas relacionadas entre si, puede ser que queramos leer el contenido de una de ellas y traer también la información de la fila de la tabla con la que hay relación. Para ello tendremos que especifir a **PostgreSQL** que queremos hacer una unión o `JOIN` entre ambas tablas.
 

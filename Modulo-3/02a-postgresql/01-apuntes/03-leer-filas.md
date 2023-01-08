@@ -1,4 +1,4 @@
-# 03 - Video Lectura de Filas
+# 03 - Video | Lectura de Filas
 
 Ahora que tenemos datos en nuestra tabla `athletes`, podemos aprender a leer sus filas con las combinaciones y filtros que usamos principalmente en bases de datos SQL.
 

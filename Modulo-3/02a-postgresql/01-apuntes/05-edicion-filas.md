@@ -1,4 +1,4 @@
-# 05 - Video Edición de Filas
+# 05 - Video | Edición de Filas
 
 Ya sabemos leer, crear y borrar, nos falta saber editar para saber hacer un CRUD `(create, read, update, delete)`.
 

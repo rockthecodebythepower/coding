@@ -1,4 +1,4 @@
-# 07 - Video Migraciones
+# 07 - Video | Migraciones
 
 Cuando en una base de datos SQL necesitamos cambiar la estructura de las tablas (columnas, tipos, claves foráneas...), crear nuevas tablas y relaciones, hacemos lo que se conoce como una **migración**.
 

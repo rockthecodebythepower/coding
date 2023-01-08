@@ -1,4 +1,4 @@
-# 04 - Video Ejercicio CSV to JSON I
+# 04 - Video | Ejercicio CSV to JSON I
 
 Antes de comenzar, recuerda que hemos visto:
 

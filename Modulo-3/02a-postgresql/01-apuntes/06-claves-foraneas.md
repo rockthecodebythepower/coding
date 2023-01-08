@@ -1,4 +1,4 @@
-# 06 - Video Clave Foráneas
+# 06 - Video | Clave Foráneas
 
 Las `FOREIGN KEYS` en bases de datos SQL nos permiten relacionar una columna de una tabla con una fila de otra tabla distinta. Esto es gran parte de la filosofía relacional que hay detras de SQL.
 

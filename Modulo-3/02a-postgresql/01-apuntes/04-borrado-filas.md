@@ -1,4 +1,4 @@
-# 04 - Video Borrado de Filas
+# 04 - Video | Borrado de Filas
 
 Ahora que sabemos escribir y leer en nuestra base de datos, toca aprender a borrar elementos para completar nuestro control sobre las tablas.
 

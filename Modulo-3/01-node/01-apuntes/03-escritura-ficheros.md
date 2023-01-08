@@ -1,4 +1,4 @@
-# 03 - Video Lectura ficheros
+# 03 - Video | Lectura ficheros
 
 Al igual que podemos leer el contenido de archivos con Node, también podemos escribir en estos de una forma muy parecida.
 

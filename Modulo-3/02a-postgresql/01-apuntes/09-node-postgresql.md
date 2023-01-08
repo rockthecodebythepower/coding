@@ -1,4 +1,4 @@
-# 08 - Videos Proyecto Node PostgreSQL
+# 09 - Video | Proyecto Node PostgreSQL
 
 El conjunto de videos en el que hacemos un proyecto de **Node** con **PostgreSQL** conlleva el uso de una librería y tendrá un objetivo principal:
 

@@ -1,4 +1,4 @@
-# 02 - Video Lectura ficheros
+# 02 - Video | Lectura ficheros
 
 Para leer archivos (ficheros) de nuestro ordenador utilizando `Node` podremos utilizar la librería interna `fs`, que siempre estará disponible para todo el código que lanzamos usando el comando `node` (incluso a través de `npm`).
 

@@ -1,4 +1,4 @@
-# 01 - Video Scripts
+# 01 - Video | Scripts
 
 Hasta ahora hemos lanzado scripts utilizando el comando `node NOMBRE_ARCHIVO.js` para lanzar un script que hayamos escrito y preparado.
 

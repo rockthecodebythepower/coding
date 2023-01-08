@@ -1,4 +1,4 @@
-# 02 - Video Creación Filas
+# 02 - Video | Creación Filas
 
 Antes de trabajar necesitamos que nuestra base de datos contenga información, por lo que vamos a aprender a introducir "filas" en nuestras tablas.
 

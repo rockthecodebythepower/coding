@@ -1,4 +1,4 @@
-# 05 - Video Ejercicio CSV to JSON II
+# 05 - Video | Ejercicio CSV to JSON II
 
 Ahora que tenemos el contenido de las filas en un array de elementos (cada elemento es un array de strings), vamos a recorrerlo y formatear cada array de valores correctamente para crear el CSV.
 

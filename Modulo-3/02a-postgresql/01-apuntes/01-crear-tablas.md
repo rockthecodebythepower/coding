@@ -1,4 +1,4 @@
-# 01 - Video Creación Tablas
+# 01 - Video | Creación Tablas
 
 - Para trabajar con nuestra base de datos PostgreSQL usaremos [PGAdmin](https://www.pgadmin.org/). Descarga e instala la versión para tu sistema operativo.
 
