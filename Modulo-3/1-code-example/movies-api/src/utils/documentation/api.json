@@ -1,0 +1,118 @@
+{
+  "Movies": {
+    "main": "/api/movies",
+    "schema": {
+        "title": "string",
+        "year": "number",
+        "actors": "Array of ActorsID"
+    },
+    "endpoints": [
+        {
+            "Action": "GET",
+            "URL": "/api/movies",
+            "response": [
+                {
+                    "_id": "6228be33c5397eba91ecad18",
+                    "title": "En busca de la felicidad",
+                    "year": 2006,
+                    "actors": [
+                        {
+                            "_id": "6228bdc5c5397eba91ecad17",
+                            "name": "Will Smith",
+                            "age": 53,
+                            "updatedAt": "2022-03-09T15:10:11.021Z"
+                        }
+                    ]
+                },
+                {
+                    "_id": "6228c4b41b9a1722cad70261",
+                    "actors": [
+                        {
+                            "_id": "6228c2a11b9a1722cad7024e",
+                            "name": "Leonardo Di Caprio",
+                            "age": 47,
+                            "createdAt": "2022-03-09T15:07:13.596Z",
+                            "updatedAt": "2022-03-09T15:07:13.596Z",
+                            "__v": 0
+                        }
+                    ],
+                    "name": "El gran Gatsby",
+                    "year": 2013,
+                    "createdAt": "2022-03-09T15:16:04.077Z",
+                    "updatedAt": "2022-03-09T15:16:04.077Z",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "Action": "GET",
+            "URL": "/api/movies/id",
+            "response": {
+                "_id": "6228be33c5397eba91ecad18",
+                "name": "En busca de la felicidad",
+                "year": 2006,
+                "actors": [
+                    {
+                        "_id": "6228bdc5c5397eba91ecad17",
+                        "name": "Will Smith",
+                        "age": 53,
+                        "updatedAt": "2022-03-09T15:10:11.021Z"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "POST",
+            "URL": "/api/movies",
+            "request-body": {
+                "name": "El gran Invento",
+                "year": 2013,
+                "actors": ["6228c2a11b9a1722cad7024e", "6228bdc5c5397eba91ecad17"]
+            },
+            "response": {
+                "actors": [
+                    "6228c2a11b9a1722cad7024e",
+                    "6228bdc5c5397eba91ecad17"
+                ],
+                "_id": "6229bc8d14efa4d872756d2e",
+                "name": "El gran Invento",
+                "year": 2013,
+                "createdAt": "2022-03-10T08:53:33.169Z",
+                "updatedAt": "2022-03-10T08:53:33.169Z",
+                "__v": 0
+            }
+        }
+    ]
+  },
+  "Actors": {
+    "main": "/api/actors",
+    "schema": {
+        "name": "string",
+        "year": "number"
+    },
+    "endpoints": [
+        {
+            "Action": "GET",
+            "URL": "/api/actors",
+            "response": [
+      
+                        {
+                            "_id": "6228bdc5c5397eba91ecad17",
+                            "name": "Will Smith",
+                            "age": 53,
+                            "updatedAt": "2022-03-09T15:10:11.021Z"
+                        },
+                        {
+                          "_id": "6228c2a11b9a1722cad7024e",
+                          "name": "Leonardo Di Caprio",
+                          "age": 47,
+                          "createdAt": "2022-03-09T15:07:13.596Z",
+                          "updatedAt": "2022-03-09T15:07:13.596Z",
+                          "__v": 0
+                      }
+                    ]      
+        }
+    ]
+  }
+
+}
