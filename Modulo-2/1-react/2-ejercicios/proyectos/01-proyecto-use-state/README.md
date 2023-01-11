@@ -92,7 +92,7 @@ export const CV = {
     wrlevel: "Native",
     splevel: "Native",
   },
-  habilities: [
+  abilities: [
     "Robotics",
     "Robot Programming",
     "Physics",
@@ -130,12 +130,12 @@ import { useState } from "react";
 import "./App.css";
 import { CV } from "./CV/CV";
 
-const { hero, education, experience, languages, habilities, volunteer } = CV;
+const { hero, education, experience, languages, abilities, volunteer } = CV;
 ```
 
 En nuestro componente `App` hemos importado `useState` para su posterior uso, la hoja de estilos de nuestro componente principal `App.css`, los `componentes` y la constante CV dentro de nuestro archivo `CV.js` para poder usarla a nivel global.
 
-Justo debajo de las importaciones realizaremos un `destructuring` de nuestra constante `CV` para poder acceder a `hero`, `education`, `experience`, `languages`, `habilities` y `volunteer` directamente, consiguiendo un código más limpio y legible.
+Justo debajo de las importaciones realizaremos un `destructuring` de nuestra constante `CV` para poder acceder a `hero`, `education`, `experience`, `languages`, `abilities` y `volunteer` directamente, consiguiendo un código más limpio y legible.
 
 **Componentes**
 ---
@@ -149,7 +149,7 @@ import Hero from "./components/Hero.jsx"...
 [...]
 import { CV } from "./CV/CV";
 
-const { hero, education, experience, languages, habilities, volunteer } = CV;
+const { hero, education, experience, languages, abilities, volunteer } = CV;
 
 function App() {
   return (
@@ -160,7 +160,7 @@ function App() {
         <Experience experience={experience} />
 	      <More
         languages={languages}
-        habilities={habilities}
+        abilities={abilities}
         volunteer={volunteer}
 	      />
     </div>
@@ -172,7 +172,7 @@ export default App;
 
 Tal y como aparece en el código, le estamos pasando por `props` la información que necesitamos a cada componente, por ejemplo: a nuestros componentes `<Hero/>` y `<About/>` le estamos pasando la información de `hero` a ambos ya que contiene el `nombre`, los `datos personales` y las frases almacenadas en `aboutMe.`
 
-Al componente `<More/>` le estamos pasando por prop `languages`, `habilities` y `volunteer` porque todo estará incluido en el mismo componente. Todo es cuestión de organizar nuestra información y repartirla de la manera más conveniente y clara.
+Al componente `<More/>` le estamos pasando por prop `languages`, `abilities` y `volunteer` porque todo estará incluido en el mismo componente. Todo es cuestión de organizar nuestra información y repartirla de la manera más conveniente y clara.
 
 Vamos a echarle un vistazo a nuestro componente `<Hero/>`, ya que va a ser el primero que veamos nada más arrancar la aplicación: 
 
@@ -290,7 +290,7 @@ import "./App.css";
 //Importación de los componentes------
 import { CV } from "./CV/CV";
 
-const { hero, education, experience, languages, habilities, volunteer } = CV;
+const { hero, education, experience, languages, abilities, volunteer } = CV;
 
 function App() {
   const [showEducation, setShowEducation] = useState(true);
