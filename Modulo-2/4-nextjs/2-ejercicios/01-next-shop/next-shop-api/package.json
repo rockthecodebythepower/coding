@@ -1,0 +1,11 @@
+{
+  "name": "next-shop-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/api.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
