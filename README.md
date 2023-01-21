@@ -1,4 +1,4 @@
-# Bienvenidos a Rock{theCode} 👨🏽‍💻
+# Bienvenidos a Rock{theCode}! 👨🏽‍💻
 
 En este repositorio tendréis todo lo necesario para continuar vuestro aprendizaje. Desde la escuela os hemos facilitado una organización que os pasamos a definir.
 
