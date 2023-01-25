@@ -1,0 +1,44 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+nav {
+  margin-bottom: 4rem;
+}
+
+button {
+  -webkit-appearance: none;
+  padding: .75rem 1.5rem;
+  border: 1px solid rgb(5, 133, 41);
+  border-radius: 5px;
+  background-color: lightgreen;
+  font-weight: bold;
+}
+
+form + form {
+  margin-top: 4rem;
+}
+
+fieldset {
+  border: #ccc solid 1px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+fieldset + fieldset,
+fieldset + div {
+  margin-top: 1rem;
+}
+
+legend {
+  padding: 0 1rem;
+}
+
+button,
+select,
+textarea,
+input {
+  font-size: 1rem;
+}

@@ -1,0 +1,48 @@
+{
+  "diary": [
+    {
+      "id": 2,
+      "date": "350-01-23",
+      "title": "Otro día más",
+      "description": "Me he quedado sin poder ir a la feria de poney, me ha parecido ver a un mago vestido de gris rondando la Comarca..."
+    },
+    {
+      "id": 1,
+      "date": "350-01-22",
+      "title": "Hoy es un día muy tranquilo",
+      "description": "Esta mañana salí a fumar esta larga pipa que me regaló mi tataratía, es tan grande que me llega a los dedos lanudos de los pies. He conseguido hacer 4 anillos de humo, así da gusto."
+    },
+
+    {
+      "id": 54,
+      "date": "350-07-23",
+      "title": "Por fin en casa",
+      "description": "Aún no me creo la aventura que hemos vivido en este viaje, nunca olvidare la compañía de los valientes enanos. Lo mejor de todo es este recuerdo que me he traído del viaje, lo cuidaré como un tesoro."
+    },
+    {
+      "id": 3,
+      "date": "350-01-24",
+      "title": "Algo extraño sucede",
+      "description": "El misterioso mago se ha presentado ante mi esta mañana y me ha mencionado a una serie de enanos que se presentarán en mi casa al anochecer. Creo que no está en sus cabales."
+    },
+
+    {
+      "id": 9,
+      "date": "350-02-27",
+      "title": "Malditos trolls",
+      "description": "Esta noche en el bosque hemos sido asaltados por 3 trolls y si no hago algo se comerán a toda la diligencia, monturas incluidas. Espero que Gandalf aparezca pronto o no saldremos de esta."
+    },
+    {
+      "id": 12,
+      "date": "350-02-28",
+      "title": "Por fin hemos llegado",
+      "description": "Por fin hemos llegado a la ladera de la Montaña, espero que los enanos encuentren la entrada secreta antes de que sea demasiado tarde. Todavía recuerdo el sabor de la comida que nos ofrecieron los elfos ayer."
+    },
+    {
+      "id": 4,
+      "date": "350-01-25",
+      "title": "Querría borrar esto...",
+      "description": "Los enanos han invadido mi casa, han destruido la vajilla de mi tia y se han comido todas las ruedas de queso que tenía en la alacena...es imposible hacer que se vayan."
+    }
+  ]
+}

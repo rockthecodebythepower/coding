@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blueviolet;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  padding: 3rem 4rem;
+}
+
+a {
+  color: #fff;
+}
+
+header {
+  padding-bottom: 7rem;
+}
+
+header img {
+  height: 50px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.landing-img {
+  width: 480px;
+  height: 282px;
+}
+
+.landing-img img {
+  width: 100%;
+}
+
+.landing-text {
+  max-width: 650px;
+  padding: 4.5rem 10rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  padding: 3rem 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.social li {
+  padding: 1rem;
+}
+
+.attribution a {
+  font-weight: bold;
+}
+
+button {
+  border-radius: 3rem;
+  background-color: #fff;
+  color: violet;
+  box-shadow:  1px 1px 15px rgba(0,0,0, 0.6);
+  padding: 1.2rem 5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}

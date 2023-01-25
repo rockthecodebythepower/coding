@@ -1,0 +1,44 @@
+.container {
+  background-color: #222;
+  height: 100vh;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+}
+
+.container > div {
+  color: white;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+}
+
+.item-1 {
+  background: #b03532;
+}
+.item-2 {
+  background: #33a8a5;
+}
+.item-3 {
+  background: #30997a;
+}
+.item-4 {
+  background: #6a478f;
+}
+.item-5 {
+  background: #da6f2b;
+}
+.item-6 {
+  background: #3d8bb1;
+}
+.item-7 {
+  background: #e03f3f;
+}
+.item-8 {
+  background: #59a627;
+}
+.item-9 {
+  background: #4464a1;
+}
+.item-10 {
+  background-color: #da6f2b;
+}

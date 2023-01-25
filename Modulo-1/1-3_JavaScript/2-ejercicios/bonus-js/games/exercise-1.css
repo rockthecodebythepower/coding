@@ -1,0 +1,12 @@
+.b-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-grid img {
+    width: 100px;
+    margin: 10px;
+    border: 3px solid #48ffc2;
+    border-radius: 10px;
+    background-color: aquamarine;
+}

@@ -1,0 +1,19 @@
+.parrafo::after {
+  content: "🫠";
+}
+
+ul > li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+ul > li::before {
+  content: "📖";
+  padding-right: 5px;
+}
+
+ul > li::after {
+  content: ":";
+  color: red;
+  padding-left: 5px;
+}

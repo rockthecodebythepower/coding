@@ -1,0 +1,16 @@
+.divborder {
+  width: 400px;
+  height: 400px;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+.inputradius {
+  all: unset;
+  background-color: grey;
+  color: whitesmoke;
+  height: 40px;
+  margin: 10px;
+  width: 400px;
+  border-radius: 20px;
+}

@@ -1,0 +1,50 @@
+/* SELECTOR POR ETIQUETAS */
+h1 {
+  color: red;
+  text-decoration: underline;
+}
+
+div {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* SELECTOR POR CLASE */
+.saludo {
+  background-color: green;
+}
+
+.despedida {
+  background-color: orange;
+}
+
+body {
+  background-color: bisque;
+  color: blue;
+}
+
+.highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* SELECTORES COMPLEJOS */
+.box > p {
+  color: cadetblue;
+}
+
+ul > li {
+  text-decoration: underline;
+}
+
+h2,
+h3 {
+  color: sienna;
+  font-size: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

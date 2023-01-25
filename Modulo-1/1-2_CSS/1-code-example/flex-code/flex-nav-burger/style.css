@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.navbar {
+  font-size: 1.2em;
+  background-image: linear-gradient(260deg, #3737cd 0%, #ed98ed 100%);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links, .logo {
+  text-decoration: none;
+  color: #959292;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.8em;
+  margin: 20px 0 0 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked +ul.main-nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 80px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  #chkToggle:checked +ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+}

@@ -1,0 +1,31 @@
+p {
+  /* Aboslutas -> salvo raro caso no usar */
+  /* font-size: 1in; */
+  /* font-size: 5cm; */
+  /* font-size: 50mm; */
+  /* font-size: 12pt; */
+  /* font-size: 2pc; */
+  /* Relativas -> estas si se usan */
+  font-size: 16px;
+  /* margin: 0.5em; esta es la  que más uso */
+  /* margin: 0.5ex; el uso de ex -> "es porque es el unico caracter que llega a las 4 esquinas relativas" */
+  /* Porcentajes */
+  margin: 2%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100px;
+  background-color: coral;
+}
+
+main {
+  height: 100vh;
+  background-color: blueviolet;
+}

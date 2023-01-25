@@ -1,0 +1,41 @@
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows:
+    30vh
+    40vh
+    30vh;
+  grid-template-areas:
+    "my-header my-header my-header my-header"
+    ". my-main my-main ."
+    "my-footer my-footer my-footer my-footer";
+}
+
+header {
+  grid-area: my-header;
+  background-color: crimson;
+}
+
+main {
+  grid-area: my-main;
+  background-color: cadetblue;
+}
+
+section {
+  grid-area: my-section;
+  background-color: darkgoldenrod;
+}
+
+footer {
+  grid-area: my-footer;
+  background-color: royalblue;
+}
+
+.grid-1 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 3rem;
+}

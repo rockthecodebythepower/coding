@@ -1,0 +1,24 @@
+:root {
+  --primary: #d6faf4;
+  --highlight: #393ce5;
+  --background: #082f45;
+  --radius: 12px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--highlight);
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: var(--highlight);
+    border-radius: var(--radius);
+}

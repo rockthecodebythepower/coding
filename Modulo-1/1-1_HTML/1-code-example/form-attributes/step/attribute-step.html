@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./attribute-step.css">
+  <script src="./attribute-step.js" defer></script>
+  <title>step</title>
+</head>
+
+<body>
+  <label for="bet">How many copies do you need? (We sell in batches of 10)</label>
+  <input id="bet" name="bet" type="number" value="0" step="10">
+
+  <label for="color">Which color would like to get?</label>
+  <input id="color" name="color" type="range" min="0" max="360" step="60">
+
+  <label for="date">When would you like to come? (We work every second day)</label>
+  <input id="date" name="date" type="date" step="2">
+
+</body>
+
+</html>

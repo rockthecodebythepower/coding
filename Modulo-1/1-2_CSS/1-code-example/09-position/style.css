@@ -1,0 +1,37 @@
+div {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.fixed {
+  position: fixed;
+  left: 100px;
+  background-color: coral;
+}
+
+.absolute {
+  background-color: green;
+  position: absolute;
+  top: 300px;
+z-index: 0;
+}
+
+.contenedor{
+	height: 3000px;
+}
+
+.caja-1{
+	height: 120px;
+	width: 120px;
+	background-color: skyblue;
+	border: 2px solid black;
+	margin:0 auto;
+	position: sticky;
+	top: 30px;
+  left: 200px;
+}
+
+.relative{
+    position: relative;
+}

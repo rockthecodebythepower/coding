@@ -1,0 +1,13 @@
+.box{
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+    margin: 8rem;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.secondbox{
+   padding: 12px 10px;
+
+}

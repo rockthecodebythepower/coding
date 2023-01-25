@@ -1,0 +1,70 @@
+div {
+  width: 150px;
+  height: 75px;
+  padding: 25px;
+  border: 10px solid coral;
+  background-color: yellowgreen;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overflow-visible{
+    height: 2rem;
+    width: 12rem;
+    border: 3px dotted coral;
+    overflow: visible;
+}
+
+.overflow-hidden{
+    height: 2rem;
+    width: 12rem;
+    border: 3px dotted coral;
+    overflow: hidden;
+}
+.overflow-scroll{
+    height: 2rem;
+    width: 12rem;
+    border: 3px dotted coral;
+    overflow: scroll;
+}
+
+.overflow-auto{
+    height: 2rem;
+    width: 12rem;
+    border: 3px dotted coral;
+    overflow: auto;
+}
+
+.div1, .div2, .div3, .div4{
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 12px;
+}
+
+.div1{
+    overflow-x: hidden;
+}
+
+.div2{
+    overflow-x: scroll;
+}
+
+.div3{
+    overflow-x: visible;
+}
+
+.div4{
+    overflow-x:auto;
+}
