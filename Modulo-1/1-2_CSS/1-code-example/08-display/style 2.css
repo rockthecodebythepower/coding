@@ -1,0 +1,16 @@
+span {
+  display: block;
+}
+
+p {
+  display: inline;
+}
+
+.oculta {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100%;
+}
