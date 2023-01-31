@@ -10,7 +10,15 @@ export const Board = styled.section`
   margin: 1rem auto;
 `;
 
-export const BoardCell = styled.div<{ isActive: boolean }>`
+const getCellColor = (isActive: boolean, isGreen: boolean, isYellow: boolean) => {
+  if (isActive) return 'white';
+  if (isGreen) return 'green';
+  if (isYellow) return 'yellow';
+
+  return 'lightgray';
+};
+
+export const BoardCell = styled.div<{ isActive: boolean, isGreen: boolean, isYellow: boolean }>`
   border: 2px solid rgb(144, 202, 249);
   border-radius: 4px;
   width: 62px;
@@ -18,5 +26,5 @@ export const BoardCell = styled.div<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => (props.isActive ? 'white' : 'lightgray')};
+  background-color: ${(props) => getCellColor(props.isActive, props.isGreen, props.isYellow)};
 `;

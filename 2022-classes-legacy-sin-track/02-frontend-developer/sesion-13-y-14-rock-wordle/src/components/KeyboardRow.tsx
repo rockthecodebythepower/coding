@@ -1,12 +1,20 @@
 type Props = {
   characters: string;
+  onClickLetter: (letter: string) => void;
 };
 
-const KeyboardRow = ({ characters }: Props) => {
+const KeyboardRow = ({ characters, onClickLetter }: Props) => {
   return (
     <>
       {characters.split('').map((character) => (
-        <button key={character}>{character}</button>
+        <button
+          key={character}
+          onClick={() => {
+            onClickLetter(character);
+          }}
+        >
+          {character}
+        </button>
       ))}
     </>
   );
