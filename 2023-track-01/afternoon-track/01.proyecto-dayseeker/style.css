@@ -1,0 +1,165 @@
+:root {
+  /* COLOR PALETTE */
+  --rc-color-n-050: #f6f6f6;
+  --rc-color-n-300: #c4c4c4;
+  --rc-color-n-500: #0f0f0f;
+
+  /* BACKGROUND COLOR */
+  --rc-color-background: var(--rc-color-n-500);
+
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-050);
+  --rc-color-typography-body: var(--rc-color-n-050);
+  --rc-color-typography-price: var(--rc-color-n-300);
+
+  /* TYPOGRAPHY */
+  --rc-typography-typeface: "Lato", sans-serif;
+
+  /* FONT SIZE */
+  --rc-typography-h1: 1.9rem;
+  --rc-typography-h2: 1.5rem;
+  --rc-typography-h3: 1.2rem;
+  --rc-typography-p: 0.8rem;
+
+  /* LETTER SPACING */
+  --rc-typography-heading-spacing: 0.5rem;
+  --rc-typography-content-spacing: 0.2rem;
+
+  /* GAP */
+  --rc-gap: 1.5rem;
+
+  /* PADDING */
+  --rc-section-padding: 1.5rem 0;
+  --rc-btn-padding: 0.5rem 2rem;
+
+  /* BORDER */
+  --rc-border: 0.12rem solid var(--rc-color-n-050);
+}
+
+/* GLOBAL STYLES */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--rc-color-background);
+  color: var(--rc-color-typography-body);
+  font-family: var(--rc-typography-typeface);
+  font-size: var(--rc-typography-p);
+  font-weight: 400;
+  letter-spacing: var(--rc-typography-content-spacing);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--rc-color-typography-body);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: var(--rc-color-typography-heading);
+  letter-spacing: var(--rc-typography-heading-spacing);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--rc-typography-h1);
+}
+
+h2 {
+  font-size: var(--rc-typography-h2);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* LAYOUT */
+.rc-layout-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-layout-grid {
+  display: grid;
+}
+
+/* HEADER */
+.rc-section-header-layout {
+  justify-content: space-around;
+  text-transform: uppercase;
+  min-height: 10vh;
+  padding: var(--rc-section-padding);
+}
+
+.rc-section-header-nav {
+  gap: var(--rc-gap);
+}
+
+.rc-section-header--nav-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.rc-section-header--nav-link::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: var(--rc-color-typography-body);
+  position: relative;
+  top: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.rc-section-header--nav-link:hover::after {
+  width: 100%;
+}
+
+/* HIDE HAMBURGER */
+.rc-hamburger-label,
+.rc-hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  /* VERTICAL DISPLAY */
+  .rc-section-header-layout {
+    flex-direction: column;
+  }
+
+  /* SHOW HAMBURGER ICON */
+  .rc-hamburger-label {
+    display: inline-block;
+    color: var(--rc-color-typography-body);
+    font-style: normal;
+    font-size: var(--rc-typography-h1);
+    padding: 0.6rem;
+  }
+  /* TOGGLE SHOW/HIDE NAV */
+  .rc-section-nav {
+    display: none;
+  }
+
+  /* WHEN CHECKED */
+  .rc-hamburger:checked ~ .rc-section-nav {
+    display: block;
+    padding: var(--rc-section-padding);
+  }
+  /* COLUMN NAV ITEMS */
+  .rc-section-header-nav {
+    flex-direction: column;
+  }
+}
