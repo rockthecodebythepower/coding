@@ -1,0 +1,290 @@
+
+:root {
+   /* BRAND COLOR */
+	--rc-color-brand: #353535;
+
+  /* COLOR PALETTE */
+  --rc-color-n-000: #fff;
+  --rc-color-n-050: #f5f5f5;
+  --rc-color-n-100: #ebebeb;
+  --rc-color-n-300: #aeaeae;
+  --rc-color-n-500: #353535;
+  --rc-color-n-700: #282828;
+  --rc-color-n-900: #1a1a1a;
+
+  /* BACKGROUND COLOR */
+  --rc-color-background-primary  : var(--rc-color-n-000);
+  --rc-color-background-secondary: var(--rc-color-n-050);
+  --rc-color-background-tertiary : var(--rc-color-n-100);
+
+  /* BORDER COLOR */
+  --rc-color-border: var(--rc-color-n-100);
+
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body   : var(--rc-color-n-900);
+  --rc-color-typography-note   : var(--rc-color-n-300);
+  --rc-color-typography-button : var(--rc-color-n-000);
+
+  /* TYPOGRAPHY TYPE */
+  --rc-typography-typeface: "Roboto", sans-serif;
+
+  /* FONT SIZE */
+  --rc-typography-h1: 1.9375rem;
+  --rc-typography-h2: 1.5625rem;
+  --rc-typography-h3: 1.25rem;
+  --rc-typography-p : 1rem;
+  --rc-typography-s : .8125rem;
+
+  /* LEADING */
+  --rc-typography-h1-leading: 1.2;
+  --rc-typography-h2-leading: 1.2;
+  --rc-typography-p-leading : 1.5;
+
+  /* MARGIN */
+  --rc-typography-margin-heading: .75rem;
+  --rc-typography-margin-body   : 1.125rem;
+
+  /* MARGIN LAYOUT*/
+  --rc-layout-container: 1.25rem;
+  --rc-layout-grid     : 3.625rem;
+  --rc-layout-gutter   : 1rem;
+
+  /* GAP */
+  --rc-gap-header     : 1rem;
+  --rc-gap-cta        : .75rem;
+  --rc-gap-hero       : 2rem;
+  --rc-gap-customer   : 2rem;
+  --rc-gap-feature    : 2rem;
+  --rc-gap-card       : 1.25rem;
+  --rc-gap-pricing    : 2rem;
+  --rc-gap-testimonial: 3rem;
+
+  /* BORDER RADIUS */
+  --rc-radius-avatar: 5rem;
+  --rc-radius-button: 5rem;
+  --rc-radius-card  : .5rem;
+
+}
+
+/* FOUNDATIONS */
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+body {
+  background-color: var(--rc-color-background-primary);
+  color: var(--rc-color-typography-body);
+  font-family: var(--rc-typography-typeface);
+  font-size: var(--rc-typography-p);
+  font-weight: 400;
+  line-height: var(--rc-typography-p-leading);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TYPOGRAPHY */
+a {
+  color: var(--rc-color-brand);
+  text-decoration-color: var(--rc-color-typography-note);
+}
+
+h1,
+h2,
+p,
+ul { margin-top: 0; }
+
+h1,
+h2 {
+  color: var(--rc-color-typography-heading);
+  margin-bottom: var(--rc-typography-margin-heading);
+}
+
+h1 {
+  font-size: var(--rc-typography-h1);
+  line-height: var(--rc-typography-h1-leading);
+}
+
+h2 {
+  font-size: var(--rc-typography-h2);
+  line-height: var(--rc-typography-h2-leading);
+}
+
+p,
+ul { margin-bottom: var(--rc-typography-margin-body); }
+
+p:last-child,
+ul:last-child { margin-bottom: 0; }
+
+ul { padding-left: 0; }
+
+strong { font-weight: 700; }
+
+small { font-size: var(--rc-typography-s); }
+
+.rc-text-note {
+  color: var(--rc-color-typography-note);
+  line-height: 1;
+}
+
+/* IMAGE */
+img,
+svg {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* LAYOUT */
+.rc-layout-container {
+  padding-left: var(--rc-layout-container);
+  padding-right: var(--rc-layout-container);
+}
+
+.rc-layout-flex,
+.rc-layout-grid {
+  align-items: center;
+  justify-content: center;
+}
+
+.rc-layout-flex { display: flex; }
+
+.rc-layout-grid { display: grid; }
+
+/* COMPONENTS */
+/* TODO: CREATE YOUR COMPONENTS - ELEMENTS */
+
+/* SECTIONS */
+/* TODO: WORK IN YOUR SECTIONS - SECTIONS */
+
+
+/* MEDIAS */
+@media screen and (min-width: 48rem) {
+  /*VARIABLES*/
+  :root {
+
+    /*TYPOGRAPHY FONT SIZE */
+    --rc-typography-h1: 2.1875rem;
+    --rc-typography-h2: 1.75rem;
+    --rc-typography-p : 1.125rem;
+    --rc-typography-s : .875rem;
+
+    /* MARGIN */
+    --rc-typography-margin-body: 1.25rem;
+
+    /*LAYOUT*/
+    --rc-layout-container: 4.25rem;
+    --rc-layout-gutter   : 1.5rem;
+
+    /* GAP */
+    --rc-gap-header: 1.5rem;
+    --rc-gap-card  : 1.5rem;
+
+  }
+
+  /*IMAGE*/
+  .rc-image-half-left {
+    padding-right: var(--rc-layout-gutter);
+  }
+
+  .rc-image-half-right {
+    padding-left: var(--rc-layout-gutter);
+  }
+
+  /* LAYOUT*/
+  .rc-layout-container,
+  .rc-layout-column-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rc-layout-grid-2,
+  .rc-layout-grid-3 {
+    column-gap: var(--rc-layout-gutter);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .rc-layout-grid-3 div:nth-of-type(3) {
+    left: calc(50% + (var(--rc-layout-gutter) / 2));
+    position: relative;
+  }
+
+  .rc-layout-column-4 {
+    width: calc((var(--rc-layout-grid) * 4) +
+           (var(--rc-layout-gutter) * 3));
+  }
+
+  /*------------------------------------------------------------
+  COMPONENT
+  ------------------------------------------------------------*/
+
+  /*------------------------------------------------------------
+  SECTION
+  ------------------------------------------------------------*/
+  
+}
+
+@media screen and (min-width: 64rem) {
+  /*VARIABLE*/
+  :root {
+    /*LAYOUT*/
+    --rc-layout-container: 0;
+  }
+
+  /*LAYOUT*/
+  .rc-layout-container { width: 60rem; }
+
+  .rc-layout-grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+  .rc-layout-grid-3 div:nth-of-type(3) { position: static; }
+
+  /*------------------------------------------------------------
+  SECTION
+  ------------------------------------------------------------*/
+
+
+}
+
+@media screen and (min-width: 75rem) {
+  /*VARIABLE*/
+  :root {
+    /*TYPOGRAPHY*/
+
+    /* FONT SIZE */
+    --rc-typography-h1: 2.75rem;
+    --rc-typography-h2: 2.1875rem;
+    --rc-typography-h4: 1.4375rem;
+
+    /* MARGIN */
+    --rc-typography-margin-heading: 1rem;
+    --rc-typography-margin-body   : 1.75rem;
+
+    /*LAYOUT*/
+    --rc-layout-grid  : 4rem;
+    --rc-layout-gutter: 2rem;
+
+    /* GAP */
+    --rc-gap-header  : 2rem;
+    --rc-gap-customer: 4rem;
+    --rc-gap-card    : 2rem;
+    --rc-gap-pricing : 3rem;
+    
+  }
+
+  /*TYPOGRAPHY*/
+  .rc-text-intro { font-size: var(--rc-typography-h4); }
+
+  /*LAYOUT*/
+  .rc-layout-container { width: 70rem; }
+
+  /*COMPONENT*/
+
+  /*SECTION*/
+
+
+}
