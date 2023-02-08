@@ -9,13 +9,13 @@
 
 - [✅] Definición meta
 - [✅] Importar fuente externa
-- [] Definición estructura principal
-- [] Variables y paleta
-- [] Estilos globales
-- [] Estilos layout
-- [] Header
-- [] Menú hamburguesa
-- [] Hero
-- [] Animación Hero
-- [] C Article
-- [] C Video
+- [✅] Definición estructura principal
+- [✅] Variables y paleta
+- [✅] Estilos globales
+- [✅] Estilos layout
+- [✅] Header
+- [✅] Menú hamburguesa
+- [✅] Hero
+- [✅] Animación Hero
+- [✅] C Article
+- [✅] C Video
