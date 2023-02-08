@@ -1,0 +1,314 @@
+
+:root {
+	--rc-color-brand: #353535;
+
+  /* COLOR PALETTE */
+
+  --rc-color-n-000: #fff;
+  --rc-color-n-050: #f5f5f5;
+  --rc-color-n-100: #ebebeb;
+  --rc-color-n-300: #aeaeae;
+  --rc-color-n-500: #353535;
+  --rc-color-n-700: #282828;
+  --rc-color-n-900: #1a1a1a;
+
+  /* BACKGROUND COLOR */
+  
+  --rc-color-background-primary  : var(--rc-color-n-000);
+  --rc-color-background-secondary: var(--rc-color-n-050);
+  --rc-color-background-tertiary : var(--rc-color-n-100);
+
+  /* BORDER COLOR */
+
+  --rc-color-border: var(--rc-color-n-100);
+
+  /* TYPOGRAPHY COLOR */
+
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body   : var(--rc-color-n-900);
+  --rc-color-typography-note   : var(--rc-color-n-300);
+  --rc-color-typography-button : var(--rc-color-n-000);
+
+  --rc-typography-typeface: "Roboto", sans-serif;
+
+  /* FONT SIZE */
+
+  --rc-typography-h1: 1.9375rem;
+  --rc-typography-h2: 1.5625rem;
+  --rc-typography-h3: 1.25rem;
+  --rc-typography-p : 1rem;
+  --rc-typography-s : .8125rem;
+
+  /* LEADING */
+
+  --rc-typography-h1-leading: 1.2;
+  --rc-typography-h2-leading: 1.2;
+  --rc-typography-p-leading : 1.5;
+
+  /* MARGIN */
+
+  --rc-typography-margin-heading: .75rem;
+  --rc-typography-margin-body   : 1.125rem;
+
+  --rc-layout-container: 1.25rem;
+  --rc-layout-grid     : 3.625rem;
+  --rc-layout-gutter   : 1rem;
+
+  /* GAP */
+  
+  --rc-gap-header     : 1rem;
+  --rc-gap-cta        : .75rem;
+  --rc-gap-hero       : 2rem;
+  --rc-gap-customer   : 2rem;
+  --rc-gap-feature    : 2rem;
+  --rc-gap-card       : 1.25rem;
+  --rc-gap-pricing    : 2rem;
+  --rc-gap-testimonial: 3rem;
+
+  /* BORDER RADIUS */
+  
+  --rc-radius-avatar: 5rem;
+  --rc-radius-button: 5rem;
+  --rc-radius-card  : .5rem;
+
+}
+
+/* FOUNDATIONS */
+
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+body {
+  background-color: var(--rc-color-background-primary);
+  color: var(--rc-color-typography-body);
+  font-family: var(--rc-typography-typeface);
+  font-feature-settings: "liga", "kern";
+  font-size: var(--rc-typography-p);
+  font-weight: 400;
+  line-height: var(--rc-typography-p-leading);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TYPOGRAPHY */
+
+a {
+  color: var(--rc-color-brand);
+  text-decoration-color: var(--rc-color-typography-note);
+}
+
+h1,
+h2,
+p,
+ul { margin-top: 0; }
+
+h1,
+h2 {
+  color: var(--rc-color-typography-heading);
+  margin-bottom: var(--rc-typography-margin-heading);
+}
+
+h1 {
+  font-size: var(--rc-typography-h1);
+  line-height: var(--rc-typography-h1-leading);
+}
+
+h2 {
+  font-size: var(--rc-typography-h2);
+  line-height: var(--rc-typography-h2-leading);
+}
+
+p,
+ul { margin-bottom: var(--rc-typography-margin-body); }
+
+p:last-child,
+ul:last-child { margin-bottom: 0; }
+
+ul { padding-left: 0; }
+
+strong { font-weight: 700; }
+
+small { font-size: var(--rc-typography-s); }
+
+.rc-text-note {
+  color: var(--rc-color-typography-note);
+  line-height: 1;
+}
+
+/* IMAGE */
+
+img,
+svg {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* LAYOUT */
+
+.rc-layout-container {
+  padding-left: var(--rc-layout-container);
+  padding-right: var(--rc-layout-container);
+}
+
+.rc-layout-flex,
+.rc-layout-grid {
+  align-items: center;
+  justify-content: center;
+}
+
+.rc-layout-flex { display: flex; }
+
+.rc-layout-grid { display: grid; }
+
+/* COMPONENTS */
+
+.rc-component-cta {
+  flex-direction: column;
+  row-gap: var( --rc-gap-cta);
+}
+
+.rc-component-button {
+  border: 0.625rem solid var(--rc-color-brand);
+  border-radius: var(--rc-radius-button);
+  display: block;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.rc-component-button-primary {
+  background-color: var(--rc-color-n-500);
+  color: var(--rc-color-typography-button);
+}
+
+.rc-component-button-secondary {
+  background-color: var(--rc-color-typography-button);
+  color: var(--rc-color-n-500);
+}
+
+
+.rc-component-card {
+  border: 0.625rem solid var(--rc-color-brand);
+  border-radius: var(--rc-radius-card);
+  overflow: hidden;
+  width: 100%;
+}
+
+.rc-component-list {
+  grid-template-columns: 1fr;
+  row-gap: .8rem;
+}
+
+.rc-component-list--item {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  list-style: none;
+  padding-left: 1.7rem;
+}
+
+.rc-component-list--item-check {
+  background-image: url(https://res.cloudinary.com/dx8n0rrqc/image/upload/v1675849922/check_b5tzoy.svg);
+}
+
+
+/* SECTIONS */
+
+.rc-section-header {
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+}
+
+.rc-section-header__layout {
+  justify-content: space-between;
+}
+
+.rc-section-header--logo {
+  z-index: 1;
+}
+
+#rc-section-header--menu-id {
+  display: none;
+}
+
+.rc-section-header--menu-icon {
+  cursor: pointer;
+  display: block;
+  height: 1.2rem;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
+  position: relative;
+  width: 1.2rem;
+  z-index: 1;
+}
+
+.rc-section-header--menu-icon::before,
+.rc-section-header--menu-icon::after {
+  background-color: var(--rc-color-brand);
+  content: "";
+  height: .150rem;
+  width: 1.2rem;
+  left: 0;
+  position: absolute;
+  transition: all 250ms cubic-bezier(.800, .130, .15, .80);
+}
+
+.rc-section-header--menu-icon::before {
+  top: 0.3rem;
+}
+
+.rc-section-header--menu-icon::after {
+  top: 0.6rem;
+}
+
+#rc-section-header--menu-id:checked ~
+.rc-section-header--menu-icon::before {
+  transform: translateY(3px) rotate(135deg);
+}
+
+#rc-section-header--menu-id:checked ~
+.rc-section-header--menu-icon::after {
+  transform: translateY(-3px) rotate(45deg);
+}
+
+.rc-section-header--nav {
+  background-color: var(--rc-color-background-primary);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+  flex-direction: column;
+  gap: var(--rc-gap-header);
+  left: 0;
+  opacity: 0;
+  padding: 7.5rem var(--rc-layout-container) 5rem;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  transition: all 250ms cubic-bezier(.800, .130, .15, .80);
+  visibility: hidden;
+}
+
+#rc-section-header--menu-id:checked ~
+.rc-section-header--nav {
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+
+.rc-section-header--nav-link {
+  font-size: var(--rc-typography-h3);
+  padding: .5rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  :root {
+    
+  }
+}
