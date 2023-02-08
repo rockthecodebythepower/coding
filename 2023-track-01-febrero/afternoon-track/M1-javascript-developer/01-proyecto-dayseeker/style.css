@@ -153,7 +153,7 @@ li {
     display: none;
   }
 
-  /* WHEN CHECKED */
+  /* WHEN CHECKED -> GENERAL SIBLING COMB */
   .rc-hamburger:checked ~ .rc-section-nav {
     display: block;
     padding: var(--rc-section-padding);
