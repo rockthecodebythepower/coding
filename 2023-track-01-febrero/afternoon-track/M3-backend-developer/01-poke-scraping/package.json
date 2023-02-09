@@ -4,12 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "start:db": "node src/db.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^6.9.1",
     "puppeteer": "^19.6.3"
   }
 }
