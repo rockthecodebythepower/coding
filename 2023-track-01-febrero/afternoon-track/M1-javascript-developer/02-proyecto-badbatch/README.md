@@ -10,6 +10,7 @@
 - [CSS Gradient - Generador de gradientes](https://cssgradient.io/)
 - [Google Fonts - Libreria de fuentes tipograficas](https://fonts.google.com/knowledge)
 - [Font Joy - Generador de pares de fuentes tipograficas](https://fontjoy.com/)
+- [CSS Peeper - Extensión para recuperar fuentes, assets y paletas de webs](https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk)
 
 ## TODO
 
