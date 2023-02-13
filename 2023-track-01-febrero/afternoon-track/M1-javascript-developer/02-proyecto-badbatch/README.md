@@ -12,3 +12,13 @@
 - [Font Joy - Generador de pares de fuentes tipograficas](https://fontjoy.com/)
 
 ## TODO
+
+- 1. Definir etiquetas meta
+- 2. Optimizar conexiones en el head
+- 3. Enlazar hoja de estilos externa y fuentes tipográficas
+- 4. Definir paleta, tamaños y estilos transverales en variables
+- 5. Definir estilos globales, resetear estilos por defecto y clases reutilizables.
+- 6. Completar la estructura básica de HTML.
+- 7. Hacer uso de Grid y Flex para la colocación de todos los elementos.
+- 8. Hacer uso de medidas relativas adaptables al viewport.
+- 9. Utilizar media queries para diferentes dispositivos, si se han utilizado flex y grid modificar la colocación inicial de los elementos.
