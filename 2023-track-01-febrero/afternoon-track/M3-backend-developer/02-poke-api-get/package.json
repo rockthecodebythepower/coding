@@ -1,0 +1,16 @@
+{
+  "name": "02-poke-api-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.9.1"
+  }
+}
