@@ -1,0 +1,9 @@
+node_modules/
+.env
+.DS_Store
+/dist
+/build
+/coverage
+
+# MongoDb data files
+/data/db
