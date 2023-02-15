@@ -1,0 +1,197 @@
+/*** --- Reset ---***/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** --- General ---***/
+
+html {
+  font-size: 18px;
+}
+/* Hereda de su padre esa propiedad - HTML */
+body {
+  font-size: inherit;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/*** --- Section Features ---***/
+
+.features {
+  max-width: 900px;
+  margin: 0 auto;
+  color: ghostwhite;
+}
+
+.features-header {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.features-header  .title {
+  font-size: 32px;
+  font-weight: 200;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.features-header .title span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.features-header .subtitle  {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 500px;
+  margin: 0 auto;
+  color: cadetblue;
+}
+
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  margin: 20px;
+}
+
+.features-cards .card {
+  max-width: 300px;
+  background-color: rgb(240, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 14px 20px -5px rgb(184, 255, 255);
+}
+
+.features-cards .card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: cadetblue;
+  margin-bottom: 10px;
+}
+
+.features-cards .card .card-text {
+  font-size: 12px;
+  margin: 0 20px 10px 0;
+  color: cadetblue;
+}
+
+.features-cards .card-web {
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 4;
+
+  border-top: 5px solid royalblue;
+  justify-self: right;
+}
+
+.features-cards .card-front {
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+  border-top: 5px solid blueviolet;
+}
+
+.features-cards .card-back {
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+  border-top: 5px solid yellowgreen;
+}
+
+.features-cards .card-freelance {
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+  border-top: 5px solid yellow;
+  justify-self: left;
+}
+
+
+.galleries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galleries-container .galleries-img-container {
+  width: 350px;
+}
+
+.galleries-container .galleries-img-container img{
+  width: 100%;
+}
+
+footer {
+  padding: 20px;
+}
+
+.atrribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.atrribution a {
+  color: darkblue;
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    width: 90%;
+  }
+
+  .features-header {
+    width: 85%;
+  }
+
+  .features-header .title {
+    font-size: 26px;
+  }
+
+  .features-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .features-cards .card-web {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self:  center;
+  }
+
+  .features-cards .card-front {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .features-cards .card-back {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .features-cards .card-freelance {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self:  center;
+  }
+
+  .galleries-container .galleries-img-container {
+    width: 150px;
+  }
+}
