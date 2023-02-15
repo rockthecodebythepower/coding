@@ -11,7 +11,10 @@
 - [Google Fonts - Libreria de fuentes tipograficas](https://fonts.google.com/knowledge)
 - [Font Joy - Generador de pares de fuentes tipograficas](https://fontjoy.com/)
 - [CSS Peeper - Extensión para recuperar fuentes, assets y paletas de webs](https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk)
+- [Pesticide - Extensión para explorar cajas](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi)
 - [Box-Shadow Generator](https://www.cssmatic.com/box-shadow)
+- [Color Picker](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg)
+- [VisBug](https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc)
 
 ## TODO
 
