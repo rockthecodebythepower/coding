@@ -1,61 +1,78 @@
-// Esto tiene que ocurrir al principio y lo primero de todo mi proyecto
+// Objetivos =>
+// Crear una API para leer elementos con GET ✅
+// Leer pokemon de la base de datos por ID ✅
+// Filtrar pokemon de la DB por nombre o tipo ✅
+// Paginar la coleccion completa de Pokemon ❌
 const dotenv = require('dotenv');
 dotenv.config();
-// De aquí en adelante, tendré las variables de entorno en process.env
-
+// >>> Separamos dotenv para que sea lo primero que se importa 🔝
+const express = require('express');
 require('./db');
 const { Pokemon } = require('./models');
 
-// Objetivos. Crear una API para leer elementos con GET:
-// Leer pokemon de la base de datos por ID
-// Filtrar pokemon de la DB por nombre o tipo
-// Paginar la coleccion completa de Pokemon
+const app = express();
+// El router definirá los comportamientos del servidor (API) para unas URLs específicas
+const router = express.Router();
 
-const main = async () => {
-  // Lectura de una colección en MongoDB con mongoose:
-  const pokemonList = await Pokemon.find().lean(); // Pongo .lean() al final para leer la información en formato OBJETO de JS y no en instancia de documento de mongoose
-  console.log('La longitud de la colección es:', pokemonList.length);
+// Aquí definimos los comportamientos de la API 🔽
+// GET POST PUT DELETE => Estos verbos definen como se va a comportar el server cuando hable con ellos
+// GET http://localhost:4001/ping
+// ENDPOINT => RUTA => URL DEL SERVER
+router.get('/ping', (request, response) => {
+  response.sendStatus(200);
+});
 
-  // Traigo todos los pokemon que tengan como nombre "Bulbasaur"
-  const allBulbasaurs = await Pokemon.find({
-    name: 'Bulbasaur',
+// GET http://localhost:4001/pokemon
+router.get('/pokemon', async (request, response) => {
+  // QUERY PARAM
+  // http://localhost:4001/pokemon
+  // http://localhost:4001/pokemon?type=water
+  // http://localhost:4001/pokemon?name=saur
+  // http://localhost:4001/pokemon?type=grass&name=saur
+  const pokemonName = request.query.name; // saur
+  const pokemonType = request.query.type; // water
+
+  const allPokemon = await Pokemon.find({
+    // Con el spread operator puedo asegurarme de que solamente voy a filtrar
+    // Si el usuario me manda los filtros en la query
+    ...(pokemonName
+      ? {
+          name: {
+            $regex: new RegExp(pokemonName, 'i'),
+          },
+        }
+      : {}),
+    ...(pokemonType
+      ? {
+          types: {
+            $in: [
+              new RegExp(pokemonType, 'i'), // /water/i
+            ],
+          },
+        }
+      : {}),
   }).lean();
-  console.log(allBulbasaurs);
 
-  // Traigo EL PRIMER elemento que tenga el nombre "Bulbasaur"
-  const oneBulbasaur = await Pokemon.findOne({
-    name: 'Bulbasaur',
-  }).lean();
-  console.log(oneBulbasaur);
+  response.status(200).json({ data: allPokemon });
+});
 
-  // Traigo todos los pokemon de tipo GRASS
-  const allGrassAndFlyingPokemon = await Pokemon.find({
-    types: {
-      // Está filtrando todos los elementos que tengan GRASS OR FLYING en su array types
-      // $in: ['Grass', 'Flying'],
-      // Está filtrando todos los elementos que tengan GRASS AND FLYING en su array types
-      $all: ['Grass', 'Flying'],
-    },
-  }).lean();
-  console.log(allGrassAndFlyingPokemon);
+// GET http://localhost:4001/pokemon/63e54c2cb3b49cbdc5c48bac
+router.get('/pokemon/:id', async (request, response) => {
+  try {
+    // URL PARAM => 63e54c2cb3b49cbdc5c48bac
+    const pokemonId = request.params.id;
+    const pokemonById = await Pokemon.findById(pokemonId).lean();
+    response.status(200).json({ data: pokemonById });
+  } catch (err) {
+    response.sendStatus(404); // Pokemon no encontrado
+  }
+});
 
-  // Traigo todos los pokemon de tipo GRASS que tengan un nombre terminado en SAUR
-  const allGrassAndSaurPokemon = await Pokemon.find({
-    types: {
-      $in: ['Grass'],
-    },
-    name: {
-      $regex: /\w+saur$/i,
-    },
-  }).lean();
-  console.log(allGrassAndSaurPokemon);
+app.use(router);
+// Aquí terminamos de definir los comportamientos de la API 🔼
 
-  // Traigo un pokemon dada su _id
-  const pokemonById = await Pokemon.findById('63e54c2cb3b49cbdc5c48bad').lean();
-  console.log(pokemonById);
-};
-
-main().then(() => {
-  console.log('Script finished running');
-  process.exit(0);
+const PORT = Number(process.env.PORT);
+app.listen(PORT, () => {
+  // http://localhost:4001
+  console.log(`Server listening in ${PORT}`);
 });
