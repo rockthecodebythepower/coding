@@ -3,12 +3,22 @@ const cors = require('cors')
 const dotenv = require('dotenv')
 const { connect } = require('./db/connect')
 
+const ActorRoutes = require('./api/routes/actor.routes')
+const MovieRoutes = require('./api/routes/movie.routes')
+const TagRoutes = require('./api/routes/tag.routes')
+const TeaserRoutes = require('./api/routes/teaser.routes')
+
 dotenv.config()
 
 const app = express()
 
 app.use(cors())
 app.use('/public', express.static('public'))
+
+app.use('/api-v1/actors', ActorRoutes)
+app.use('/api-v1/movies', MovieRoutes)
+app.use('/api-v1/tags', TagRoutes)
+app.use('/api-v1/teaser', TeaserRoutes)
 
 const PORT = process.env.PORT || 8000
 
