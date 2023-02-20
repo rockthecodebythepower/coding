@@ -1,0 +1,18 @@
+{
+  "characters": [
+    {
+      "name": "Pepe",
+      "age": 78
+    },
+    {
+      "name": "Peter",
+      "age": 40
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cocacola"
+    }
+  ]
+}
