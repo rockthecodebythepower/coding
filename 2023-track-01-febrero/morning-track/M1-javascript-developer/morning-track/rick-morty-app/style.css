@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+:root {
+  --left-bg-color: rgba(150, 150, 230, 0.7);
+  --right-bg-color: rgba(30, 30, 13, 0.7);
+  --left-cta-hover-color: yellowgreen;
+  --right-cta-hover-color: crimson;
+  --hover-width: 80%;
+  --other-width: 20%;
+  --speed: 2000ms;
+  --color-font-title: #fff;
+  --cta-color:#fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mynerve', cursive;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
