@@ -29,9 +29,25 @@ async function retrieveMovieByName(req, res, next) {
   }
 }
 
+// {
+//   name: 'Erase una vez en hollywood',
+//   year: '2021:09:10',
+//   actors: [ '63f495eacae5388905441805' ],
+//   tag: [ '63f492e2b52d43b8e07a0825' ]
+// }
+
 async function createMovie(req, res, next) {
   try {
-    const movie = new MovieModel(req.body)
+    console.log(req.body.actors)
+
+    const movieToSave = {
+      name: req.body.name,
+      year: req.body.year,
+      actors: req.body.actors,
+      tags: req.body.tags,
+    }
+    console.log('Creo Object', movieToSave)
+    const movie = new MovieModel(movieToSave)
     const movieDB = await movie.save()
     res.status(201).json(movieDB)
   } catch (error) {
