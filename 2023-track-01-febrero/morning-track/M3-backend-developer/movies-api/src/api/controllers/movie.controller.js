@@ -2,7 +2,7 @@ const MovieModel = require('../models/movie.model')
 
 async function retrieveAllMovies(req, res, next) {
   try {
-    const movies = await MovieModel.find()
+    const movies = await MovieModel.find().populate(['actors', 'tags'])
     res.status(200).json(movies)
   } catch (error) {
     return next(error.message)
@@ -12,7 +12,7 @@ async function retrieveAllMovies(req, res, next) {
 async function retrieveMovieById(req, res, next) {
   try {
     const { id } = req.params
-    const movie = await MovieModel.findById(id)
+    const movie = await MovieModel.findById(id).populate(['actors', 'tags'])
     res.status(200).json(movie)
   } catch (error) {
     return next(error.message)
@@ -22,19 +22,12 @@ async function retrieveMovieById(req, res, next) {
 async function retrieveMovieByName(req, res, next) {
   try {
     const { name } = req.params
-    const movies = await MovieModel.find({ name })
+    const movies = await MovieModel.find({ name }).populate(['actors', 'tags'])
     res.status(200).json(movies)
   } catch (error) {
     return next(error.message)
   }
 }
-
-// {
-//   name: 'Erase una vez en hollywood',
-//   year: '2021:09:10',
-//   actors: [ '63f495eacae5388905441805' ],
-//   tag: [ '63f492e2b52d43b8e07a0825' ]
-// }
 
 async function createMovie(req, res, next) {
   try {
@@ -59,7 +52,19 @@ async function deleteMovieById(req, res, next) {
   try {
     const { id } = req.params
     const movie = await MovieModel.findByIdAndDelete(id)
-    res.status(200).json(movie.name)
+    res.status(204).json(movie.name)
+  } catch (error) {
+    return next(error.message)
+  }
+}
+
+async function updateMovieById(req, res, next) {
+  try {
+    const { id } = req.params
+    const updateMovie = await MovieModel.findByIdAndUpdate(id, req.body, {
+      new: true,
+    })
+    res.status(200).json(updateMovie)
   } catch (error) {
     return next(error.message)
   }
@@ -71,4 +76,5 @@ module.exports = {
   retrieveMovieByName,
   createMovie,
   deleteMovieById,
+  updateMovieById,
 }
