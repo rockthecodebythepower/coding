@@ -2,7 +2,7 @@
 
 - Preparar server y conectar con una DB ✅
 - Definir un modelo de datos simple ✅
-- Hacer un CRUD sobre uno de los modelos (Create ✅ => Read => Update || Delete)
+- Hacer un CRUD sobre uno de los modelos (Create ✅ => Read ✅ => Update ✅ || Delete ✅)
 
 ## Modelo de datos
 
