@@ -1,0 +1,8 @@
+
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow: auto;
+  height: 100vh;
+}

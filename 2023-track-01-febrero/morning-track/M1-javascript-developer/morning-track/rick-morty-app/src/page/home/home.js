@@ -1,6 +1,6 @@
 import { setupCTA } from '../../components/cta/cta'
-import { initCharacters } from '../Characters/characters'
-import { initLocations } from '../Locations/locations'
+import { initButton } from '../../components/button/button'
+import { initDetails } from '../details/details'
 import './home.css'
 
 
@@ -8,6 +8,11 @@ import './home.css'
 export const initHome = () => {
   document.querySelector('.left').innerHTML += setupCTA('Characters', 'cta-left')
   document.querySelector('.right').innerHTML += setupCTA('Locations', 'cta-right')
+  document.querySelector('#app').innerHTML += initButton({
+    name: 'faq',
+    class: 'normal',
+    id: 'faq'
+  })
 }
 
 export const homeListeners = () => {
@@ -30,6 +35,7 @@ export const homeListeners = () => {
       () => document.querySelector('.container')
         .classList.remove('hover-right'))
 
-  document.querySelector('.cta-left').addEventListener('click', () => initCharacters())
-  document.querySelector('.cta-right').addEventListener('click', () => initLocations())
+  document.querySelector('.cta-left').addEventListener('click', () => initDetails('character'))
+  document.querySelector('.cta-right').addEventListener('click', () => initDetails('location'))
+  document.querySelector('#faq').addEventListener('click', () => console.log('init faqs'))
 }

@@ -1,7 +1,7 @@
 import { homeListeners, initHome } from './src/page/Home/home'
 import './style.css'
 
-const init = () => {
+const createHome = () => {
   document.querySelector('#app').innerHTML = `
     <div class="container">
       <div class="split left"></div>
@@ -12,5 +12,6 @@ const init = () => {
   homeListeners()
 }
 
+//TODO: Colocar FAQ a nivel del main para tenerlo siempre accesible
 
-init()
+createHome()
