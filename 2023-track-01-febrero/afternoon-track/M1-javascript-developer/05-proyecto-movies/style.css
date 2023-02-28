@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: whitesmoke;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1rem 1rem 0 1rem;
+  background-color: whitesmoke;
+  color: #1c1c1c;
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card img {
+  width: 20px;
+}
+
+.card > img {
+  height: 200px;
+  width: auto;
+}
+
+.card > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card > div img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
