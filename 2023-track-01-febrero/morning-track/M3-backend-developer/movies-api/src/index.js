@@ -8,6 +8,7 @@ const ActorRoutes = require('./api/routes/actor.routes')
 const MovieRoutes = require('./api/routes/movie.routes')
 const TagRoutes = require('./api/routes/tag.routes')
 const TeaserRoutes = require('./api/routes/teaser.routes')
+const UserRoutes = require('./api/routes/user.routes')
 
 // Inicializar la escucha de Varaibales de entorno
 dotenv.config()
@@ -37,6 +38,7 @@ app.use('/api-v1/actors', ActorRoutes)
 app.use('/api-v1/movies', MovieRoutes)
 app.use('/api-v1/tags', TagRoutes)
 app.use('/api-v1/teasers', TeaserRoutes)
+app.use('/api-v1/users', UserRoutes)
 
 // Manejar errores para routes no encontradas o definidas
 app.use('*', (req, res, next) => {

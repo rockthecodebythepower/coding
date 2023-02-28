@@ -9,11 +9,13 @@ const {
   updateMovieById,
 } = require('../controllers/movie.controller')
 
+const { isAuth } = require('../../middlewares/auth.middleware')
+
 MovieRoutes.get('/all', retrieveAllMovies)
 MovieRoutes.get('/id/:id', retrieveMovieById)
 MovieRoutes.get('/name/:name', retrieveMovieByName)
-MovieRoutes.post('/create', createMovie)
-MovieRoutes.delete('/remove/:id', deleteMovieById)
-MovieRoutes.put('/update/:id', updateMovieById)
+MovieRoutes.post('/create', [isAuth], createMovie)
+MovieRoutes.delete('/remove/:id', [isAuth], deleteMovieById)
+MovieRoutes.put('/update/:id', [isAuth], updateMovieById)
 
 module.exports = MovieRoutes

@@ -1,5 +1,6 @@
 const TeaserRoutes = require('express').Router()
 
+const { isAuth } = require('../../middlewares/auth.middleware')
 const {
   retrieveAllTeasers,
   retrieveTeaserById,
@@ -8,6 +9,6 @@ const {
 
 TeaserRoutes.get('/all', retrieveAllTeasers)
 TeaserRoutes.get('/id/:id', retrieveTeaserById)
-TeaserRoutes.post('/create', createTeaser)
+TeaserRoutes.post('/create', [isAuth], createTeaser)
 
 module.exports = TeaserRoutes
