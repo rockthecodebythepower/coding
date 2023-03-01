@@ -1,0 +1,253 @@
+:root {
+  --rc-color-n-050: #f8f8f8;
+  --rc-color-n-100: #dddddd;
+  --rc-color-n-700: #1d1e1f;
+  --rc-color-highlight: #9e4f60;
+
+  --rc-typography-color-base: var(--rc-color-n-050);
+  --rc-typography-color-detail: var(--rc-color-n-100);
+  --rc-background-color: var(--rc-color-n-700);
+
+  --rc-typography-heading: "Barlow", sans-serif;
+  --rc-typography-content: "Open Sans", sans-serif;
+
+  --rc-typography-h1: 1.9rem;
+  --rc-typography-h2: 1.5rem;
+  --rc-typography-h3: 1.2rem;
+  --rc-typography-base: 0.8rem;
+
+  --rc-typography-heading-spacing: 0.2rem;
+  --rc-typography-base-spacing: 0.1rem;
+
+  --rc-gap: 1.5rem;
+
+  --rc-section-padding: 1.5rem 12rem;
+  --rc-btn-padding: 0.5rem 2rem;
+
+  --rc-border: 0.13rem solid var(--rc-color-highlight);
+  --rc-border-radius: 3rem;
+
+  --rc-box-shadow: 0px 0px 10px 0px var(--rc-color-n-050);
+}
+
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-color: var(--rc-background-color);
+  background-image: url(https://res.cloudinary.com/dfnh5hecu/image/upload/v1676035060/The%20Bad%20Batch/background-stars-desktop_v2_96b6d74a_o53kc9.jpg);
+  background-size: cover;
+  color: var(--rc-typography-color-base);
+  font-family: var(--rc-typography-content);
+  font-size: var(--rc-typography-base);
+  font-weight: 400;
+  letter-spacing: var(--rc-typography-base-spacing);
+  text-rendering: optimizeLegibility;
+  --webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: var(--rc-typography-color-base);
+  letter-spacing: var(--rc-typography-heading-spacing);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--rc-typography-h1);
+}
+
+h2 {
+  font-size: var(--rc-typography-h2);
+}
+
+a {
+  color: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  color: var(--rc-color-highlight);
+}
+
+strong {
+  font-weight: bold;
+  color: var(--rc-typography-color-detail);
+}
+
+.rc-btn {
+  border: var(--rc-border);
+  border-radius: var(--rc-border-radius);
+  padding: var(--rc-btn-padding);
+  white-space: nowrap;
+}
+
+.rc-btn:hover {
+  box-shadow: var(--rc-box-shadow);
+  color: var(--rc-color-n-050);
+}
+
+.rc-highlight-btn {
+  background-color: var(--rc-color-highlight);
+}
+
+/* LAYOUT */
+.rc-layout-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-layout-grid {
+  display: grid;
+}
+
+/* HEADER */
+.rc-header-layout__nav {
+  height: 12vh;
+}
+
+.rc-header-layout__nav__links {
+  height: 100%;
+  gap: var(--rc-gap);
+}
+
+.rc-header-layout__hero {
+  flex-direction: column;
+  gap: var(--rc-gap);
+  padding: var(--rc-section-padding);
+  text-align: center;
+  background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgb(0, 0, 0) 100%
+    ),
+    url(https://res.cloudinary.com/dfnh5hecu/image/upload/v1676035060/The%20Bad%20Batch/the-bad-batch-featured-hero-desktop_c5e7c34d_jsqoeg.webp);
+
+  background-size: cover;
+}
+
+.rc-header-layout__hero--logo {
+  width: 20rem;
+  animation: logoSaturate 5s;
+}
+
+@keyframes logoSaturate {
+  0% {
+    opacity: 0;
+    filter: saturate(0%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: saturate(100%);
+  }
+}
+
+.rc-header-layout__hero--btn_container {
+  gap: var(--rc-gap);
+  flex-wrap: wrap;
+}
+
+/* DESCRIPTION */
+.rc-description-layout {
+  padding: var(--rc-section-padding);
+  gap: var(--rc-gap);
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rc-description-layout__poster {
+  width: 19rem;
+}
+.rc-description-layout__content {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--rc-gap);
+  width: 25rem;
+}
+
+/* GALLERY */
+.rc-gallery-layout {
+  padding: var(--rc-section-padding);
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(6, 13rem);
+}
+
+.rc-gallery-layout__item {
+  overflow: hidden;
+}
+
+.rc-gallery-layout__item--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0%);
+  transition: all 1s ease-in-out;
+}
+
+.rc-gallery-layout__item--img:hover {
+  transform: scale(1.1);
+  filter: saturate(100%);
+}
+
+.grid-item-1 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.grid-item-2 {
+  grid-row: 3/5;
+  grid-column: 2/4;
+}
+
+.grid-item-3 {
+  grid-row: 5/7;
+  grid-column: 1/3;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 43.5rem) {
+  .rc-description-layout,
+  .rc-header-layout__hero {
+    padding: calc(var(--rc-section-padding) / 2);
+  }
+  .rc-header-layout__hero--btn_container {
+    padding: 1rem 0;
+  }
+
+  .rc-gallery-layout {
+    padding: 1rem 0;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fill, 200px);
+  }
+  .grid-item-1 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .grid-item-2 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .grid-item-3 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}

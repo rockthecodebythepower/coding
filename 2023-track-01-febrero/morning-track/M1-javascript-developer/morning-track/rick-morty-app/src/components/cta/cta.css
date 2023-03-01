@@ -1,0 +1,39 @@
+.cta {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: var(--cta-color);
+  border: var(--cta-color) solid 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 15rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+
+.cta-title {
+  font-size: 4rem;
+  color: var(--color-font-title);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 800) {
+  .cta {
+    width: 10rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+    top: 35%;
+  }
+}

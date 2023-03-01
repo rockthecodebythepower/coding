@@ -1,0 +1,20 @@
+p {
+  color: green;
+  /* 0,0,0,1 */
+}
+
+div p {
+  color: coral;
+  /* 0,0,0,2 */
+}
+
+
+.one p {
+  color: blueviolet;
+   /* 0,0,1,1 */
+}
+
+#two p {
+  color: yellow;
+    /* 0,1,0,1 */
+}

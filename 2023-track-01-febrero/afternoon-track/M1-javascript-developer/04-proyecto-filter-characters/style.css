@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#app img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+#app article {
+  padding: 0.5rem;
+
+  color: black;
+  text-align: center;
+  margin: 1rem;
+}
+
+.filters {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+}
+
+.JediOrder {
+  background-color: cadetblue;
+}
+
+.JediOrder::before {
+  content: "🧙🏻‍♂️";
+}
+
+.RebelAlliance {
+  background-color: orange;
+}
+
+.RebelAlliance::before {
+  content: "🎖️";
+}
+
+.GalacticEmpire {
+  background-color: crimson;
+}
+
+.GalacticEmpire::before {
+  content: "😈";
+}
+.GalacticRepublic {
+  background-color: green;
+}
+
+.GalacticRepublic::before {
+  content: "💂🏻‍♀️";
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+}

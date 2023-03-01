@@ -1,9 +1,0 @@
-.pokemon-form {
-  display: flex;
-  margin-top: 16px;
-  justify-content: center;
-}
-
-.pokemon-form > input {
-  font-size: 16px;
-}

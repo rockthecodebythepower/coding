@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "name": "pasta",
+    "carbs": 40,
+    "proteins": 10,
+    "fats": 8
+  },
+  {
+    "id": "2",
+    "name": "salmon",
+    "carbs": 5,
+    "proteins": 30,
+    "fats": 12
+  }
+]

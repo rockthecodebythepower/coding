@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  --primary-color: rgb(3, 148, 148);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem;
+  background-color: #eafaff;
+}
+
+header p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.radio-choice input,
+label {
+  cursor: pointer;
+}
+
+/* Choices container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 0.7rem;
+}
+
+/* Radio choices */
+.radio-choice {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border: 1px solid var(--primary-color);
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+/* Custom radio style */
+.radio-btn {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  transition: 0.1s linear;
+}
+
+.radio-btn:checked {
+  border: 4px solid var(--primary-color);
+}
+
+.radio-btn:checked + label {
+  color: var(--primary-color);
+}

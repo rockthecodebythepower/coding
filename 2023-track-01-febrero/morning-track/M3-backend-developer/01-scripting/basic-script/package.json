@@ -1,0 +1,14 @@
+{
+  "name": "basic-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "write": "node write.js",
+    "read": "node read.js",
+    "toCSV": "node convertJsonCsv.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

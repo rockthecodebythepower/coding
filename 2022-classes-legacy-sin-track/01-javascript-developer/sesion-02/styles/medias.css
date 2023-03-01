@@ -1,0 +1,23 @@
+/* screen, print, all => Si no pongo nada, aplica all directamente */
+/* only => Solo aplica la media query en navegadores que soporten su condicion */
+
+@media (orientation: landscape) {
+  h1 {
+    color: red;
+  }
+}
+
+@media (orientation: portrait) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* Como mínimo la pantalla debe medir 500px de ancho */
+/* Como máximo la pantalla debe medir 700px */
+@media (min-width: 500px) and (max-width: 700px) {
+  .text-transform {
+    text-transform: uppercase;
+  }
+}
+

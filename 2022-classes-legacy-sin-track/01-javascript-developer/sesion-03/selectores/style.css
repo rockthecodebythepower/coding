@@ -1,0 +1,41 @@
+h1 {
+  color: violet;
+}
+
+p {
+  color: coral;
+}
+
+.other {
+  color: cadetblue;
+}
+
+#idP {
+  color: brown;
+}
+
+.other, .other-two, #idP {
+  font-size: 50px;
+}
+
+footer p {
+  color: yellowgreen;
+}
+
+div > p {
+  color: aqua;
+}
+
+li:first-child {
+  color: blue
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+
+/* div {...} => 0,0,0,1 => 0001 */ 
+/* div div {...} => 0,0,0,2 => 0002 */
+/* .class div {...} => 0,0,1,1 => 0011  */
+/* #page .class div {...} => 0,1,1,1 => 0111 */
