@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #1c1c1c;
-  color: whitesmoke;
+  background-color: #2d3034;
+  color: #f5f5f5;
 }
 
 h2 {
@@ -27,11 +27,11 @@ h2 {
 
 .card {
   border-radius: 12px;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   background-color: whitesmoke;
   color: #1c1c1c;
   width: 400px;
-  height: 700px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
