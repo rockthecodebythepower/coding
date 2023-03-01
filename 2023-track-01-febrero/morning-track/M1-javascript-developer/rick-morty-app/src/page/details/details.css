@@ -5,4 +5,7 @@
   gap: 5px;
   overflow: auto;
   height: 100vh;
+  background: url('./space.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

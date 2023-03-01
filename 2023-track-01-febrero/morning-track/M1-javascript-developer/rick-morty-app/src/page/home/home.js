@@ -2,6 +2,8 @@ import { setupCTA } from '../../components/cta/cta'
 import { initButton } from '../../components/button/button'
 import { initDetails } from '../details/details'
 import './home.css'
+import { initFaqs } from '../faqs/faqs'
+import { initGithub } from '../../components/github/github'
 
 
 
@@ -9,10 +11,11 @@ export const initHome = () => {
   document.querySelector('.left').innerHTML += setupCTA('Characters', 'cta-left')
   document.querySelector('.right').innerHTML += setupCTA('Locations', 'cta-right')
   document.querySelector('#app').innerHTML += initButton({
-    name: 'faq',
+    name: 'FAQS',
     class: 'normal',
     id: 'faq'
   })
+  document.querySelector('#app').innerHTML += initGithub()
 }
 
 export const homeListeners = () => {
@@ -37,5 +40,5 @@ export const homeListeners = () => {
 
   document.querySelector('.cta-left').addEventListener('click', () => initDetails('character'))
   document.querySelector('.cta-right').addEventListener('click', () => initDetails('location'))
-  document.querySelector('#faq').addEventListener('click', () => console.log('init faqs'))
+  document.querySelector('#faq').addEventListener('click', () => initFaqs())
 }

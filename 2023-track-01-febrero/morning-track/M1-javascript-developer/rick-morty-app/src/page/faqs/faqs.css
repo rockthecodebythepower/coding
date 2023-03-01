@@ -1,0 +1,72 @@
+.faq-container {
+  overflow: auto;
+  height: 100vh;
+  background: url('./space.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.faq-page-title {
+  text-align: center;
+  color: yellow;
+  font-size: 2.5rem;
+}
+
+.faq {
+  color: yellow;
+  border: 1px solid #aed9f9;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  color: black;
+  background-color: #ffffffd3;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.1), rgba(0,0,0,0.1);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.faq-text {
+  text-align: center;
+  display: none;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 35px;
+  width: 35px;
+}
+
+.faq-toggle .fa-close {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-close {
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-open {
+  display: none;
+}

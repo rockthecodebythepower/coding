@@ -1,5 +1,25 @@
 .button {
   position: absolute;
   bottom: 10px;
-  right: 10px
+  right: 10px;
+  background-color: #ffee00;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  width: 150px;
+}
+
+.button.rounded {
+  background-color: #ffee00df;
+  border-radius: 50px;
+  width: 43px;
+  left: 10px;
 }
