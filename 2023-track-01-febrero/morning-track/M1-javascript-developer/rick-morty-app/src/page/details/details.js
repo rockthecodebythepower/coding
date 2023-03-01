@@ -3,13 +3,16 @@ import { initButton } from '../../components/button/button'
 import './details.css'
 import { createHome } from '../../../main'
 
+// crear un botón y cuando haga click +1 en el index
+let indexPage = 1;
+
 export const initDetails = (type) => {
   retrieveAllData(type)
 }
 
 const retrieveAllData = async (type) => {
   try {
-    const responsePromise = await fetch(`https://rickandmortyapi.com/api/${type}`)
+    const responsePromise = await fetch(`https://rickandmortyapi.com/api/${type}?page=${indexPage}`)
     const responseToJson = await responsePromise.json()
     type === 'character' ? transformDataCharacter(responseToJson, type) : transformDataLocation(responseToJson, type)
   } catch (error) {
