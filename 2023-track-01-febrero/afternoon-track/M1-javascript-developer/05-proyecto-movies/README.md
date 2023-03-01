@@ -5,3 +5,4 @@
 - Buscar por año -> range
 - Buscar por género
 - Los filtros se tienen que cumplimentar
+- Dark mode
