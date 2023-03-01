@@ -8,6 +8,33 @@
 body {
   background-color: #2d3034;
   color: #f5f5f5;
+  animation: fadeIn 1s;
+  transition: background-color 1s;
+}
+
+.light {
+  background-color: rgb(186, 186, 186);
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
 }
 
 h2 {
@@ -31,13 +58,13 @@ h2 {
   background-color: whitesmoke;
   color: #1c1c1c;
   width: 400px;
-  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
   gap: 1rem;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .card img {
@@ -57,8 +84,59 @@ h2 {
   gap: 1rem;
 }
 
-.card > div img {
+.card div img {
   width: 100px;
   height: 80px;
   object-fit: cover;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 200px;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #0aa0db;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #0aa0db;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px black;
+    box-shadow: 0 0 20px 0px black;
+  }
 }
