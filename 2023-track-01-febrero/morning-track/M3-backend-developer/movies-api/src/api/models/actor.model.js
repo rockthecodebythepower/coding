@@ -19,6 +19,7 @@ const actorSchema = new mongoose.Schema(
         required: false,
       },
     ],
+    photo: { type: String, trim: true, required: false },
   },
   {
     timestamps: true,

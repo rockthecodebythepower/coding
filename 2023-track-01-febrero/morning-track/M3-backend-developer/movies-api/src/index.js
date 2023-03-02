@@ -3,6 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const dotenv = require('dotenv')
 const { connect } = require('./db/connect')
+const { configCloudinary } = require('./utils/cloudinary')
 // Routes
 const ActorRoutes = require('./api/routes/actor.routes')
 const MovieRoutes = require('./api/routes/movie.routes')
@@ -20,6 +21,9 @@ const app = express()
 
 // Conectarme a mi DB
 connect()
+
+// Inicializamos cloudinary
+configCloudinary()
 
 // CORS para trabajar con puerto default Vite
 // {

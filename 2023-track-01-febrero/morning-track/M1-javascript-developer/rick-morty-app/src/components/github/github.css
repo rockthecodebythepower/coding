@@ -1,4 +1,7 @@
-.card {
+.gh-container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   background-color: rgba(45, 51, 68, 0.6);
   color: #fff;
   display: flex;
@@ -9,14 +12,4 @@
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  flex-grow: 1;
-
-}
-
-.card-image-container {
-  width: 180px;
-}
-
-.card-image-container > img {
-  width: 100%;
 }

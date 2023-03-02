@@ -15,7 +15,17 @@
       <button id="allBtn">All</button>
       <button id="moviesBtn">Movies</button>
       <button id="showsBtn">Shows</button>
-      <input type="range" />
+      <input type="text" id="searchbar" placeholder="Title or Genre..." />
+      <select id="genreSelect">
+        <option value="">-</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="drama">Drama</option>
+      </select>
+      <input type="range" id="rangeInput" min="2000" max="2016" step="1" />
+      <p id="rangeInputValue">Date</p>
+      <button id="theme">🌚</button>
     </header>
     <div id="app" class="gallery"></div>
     <script type="module" src="/main.js"></script>

@@ -23,6 +23,7 @@ const movieSchema = new mongoose.Schema(
         required: false,
       },
     ],
+    poster: { type: String, trim: true, required: false },
   },
   {
     timestamps: true,

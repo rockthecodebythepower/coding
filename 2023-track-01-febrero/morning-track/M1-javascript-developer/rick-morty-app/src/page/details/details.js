@@ -1,5 +1,10 @@
 import { initCard } from '../../components/card/card'
+import { initButton } from '../../components/button/button'
 import './details.css'
+import { createHome } from '../../../main'
+
+// crear un botón y cuando haga click +1 en el index
+let indexPage = 1;
 
 export const initDetails = (type) => {
   retrieveAllData(type)
@@ -7,7 +12,7 @@ export const initDetails = (type) => {
 
 const retrieveAllData = async (type) => {
   try {
-    const responsePromise = await fetch(`https://rickandmortyapi.com/api/${type}`)
+    const responsePromise = await fetch(`https://rickandmortyapi.com/api/${type}?page=${indexPage}`)
     const responseToJson = await responsePromise.json()
     type === 'character' ? transformDataCharacter(responseToJson, type) : transformDataLocation(responseToJson, type)
   } catch (error) {
@@ -31,7 +36,7 @@ const transformDataLocation = (response, type) => {
   let dataTransformed = response.results.map((data) => {
     return {
       name: data.name,
-      image: 'https://static.posters.cz/image/1300/art-photo/rick-morty-planet-i112357.jpg',
+      image: 'https://media.giphy.com/media/RdizsB3uw9Af57YnAQ/giphy.gif',
       type: data.type,
       dimension: data.dimension
     }
@@ -41,13 +46,31 @@ const transformDataLocation = (response, type) => {
 
 const insertData = (data, type) => {
   let characterContainer = document.createElement('div')
+  // let title = document.createElement('h1')
+  // title.innerHTML = type
+
   characterContainer.classList.add('character-container')
   document.querySelector('#app').innerHTML = ''
+  // document.querySelector('#app').append(title)
   document.querySelector('#app').append(characterContainer)
+
 
   data.forEach(element => {
     const printed = initCard(element, type)
     characterContainer.innerHTML += printed
-  });
+  })
 
+  document.querySelector('#app').innerHTML += initButton({
+    name: '🚀',
+    class: 'rounded',
+    id: 'homeButton'
+  })
+
+  buttonListener()
+}
+
+export const buttonListener = () => {
+  document.querySelector('#homeButton').
+    addEventListener('click',
+      () => createHome())
 }
