@@ -1,5 +1,7 @@
 const MovieModel = require('../models/movie.model')
 
+const { deleteImgCloudinary } = require('../../middlewares/files.middleware')
+
 async function retrieveAllMovies(req, res, next) {
   try {
     const movies = await MovieModel.find().populate(['actors', 'tags'])
@@ -31,16 +33,10 @@ async function retrieveMovieByName(req, res, next) {
 
 async function createMovie(req, res, next) {
   try {
-    console.log(req.body.actors)
-
-    const movieToSave = {
-      name: req.body.name,
-      year: req.body.year,
-      actors: req.body.actors,
-      tags: req.body.tags,
-    }
-    console.log('Creo Object', movieToSave)
-    const movie = new MovieModel(movieToSave)
+    const movie = new MovieModel({
+      ...req.body,
+      poster: req.file ? req.file.path : 'not image',
+    })
     const movieDB = await movie.save()
     res.status(201).json(movieDB)
   } catch (error) {
@@ -52,6 +48,7 @@ async function deleteMovieById(req, res, next) {
   try {
     const { id } = req.params
     const movie = await MovieModel.findByIdAndDelete(id)
+    if (movie.poster) deleteImgCloudinary(movie.poster)
     res.status(204).json(movie.name)
   } catch (error) {
     return next(error.message)
@@ -61,9 +58,16 @@ async function deleteMovieById(req, res, next) {
 async function updateMovieById(req, res, next) {
   try {
     const { id } = req.params
-    const updateMovie = await MovieModel.findByIdAndUpdate(id, req.body, {
-      new: true,
-    })
+    const updateMovie = await MovieModel.findByIdAndUpdate(
+      id,
+      {
+        ...req.body,
+        poster: req.file ? req.file.path : 'not image',
+      },
+      {
+        new: true,
+      }
+    )
     res.status(200).json(updateMovie)
   } catch (error) {
     return next(error.message)

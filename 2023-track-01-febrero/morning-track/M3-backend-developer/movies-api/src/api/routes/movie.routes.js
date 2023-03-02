@@ -10,12 +10,18 @@ const {
 } = require('../controllers/movie.controller')
 
 const { isAuth } = require('../../middlewares/auth.middleware')
+const { upload } = require('../../middlewares/files.middleware')
 
 MovieRoutes.get('/all', retrieveAllMovies)
 MovieRoutes.get('/id/:id', retrieveMovieById)
 MovieRoutes.get('/name/:name', retrieveMovieByName)
-MovieRoutes.post('/create', [isAuth], createMovie)
+MovieRoutes.post('/create', [isAuth], upload.single('poster'), createMovie)
 MovieRoutes.delete('/remove/:id', [isAuth], deleteMovieById)
-MovieRoutes.put('/update/:id', [isAuth], updateMovieById)
+MovieRoutes.put(
+  '/update/:id',
+  [isAuth],
+  upload.single('poster'),
+  updateMovieById
+)
 
 module.exports = MovieRoutes
