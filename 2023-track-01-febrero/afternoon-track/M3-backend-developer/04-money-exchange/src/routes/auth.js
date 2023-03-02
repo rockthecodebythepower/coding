@@ -2,6 +2,7 @@
 // que estén detrás de /auth para autenticación de usuarios
 import express from 'express';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 import { validateEmail } from '../utils/validators.js';
 import { User } from '../models/index.js';
 
@@ -44,7 +45,7 @@ router.post('/register', async (req, res) => {
 
     // En caso de que el User no exista, creamos uno nuevo
     const newUser = new User({
-      email,
+      email: email.toLowerCase(),
       password: passwordHash,
       username,
     });
@@ -57,7 +58,45 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// router.post('/login')
-// router.post('/profile')
+// POST http://localhost:4001/auth/login
+router.post('/login', async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+    // Aquí deberíamos validar los campos del body o usar un esquema con Joi o Zod
+    // Primero buscamos un User para saber que existe
+    const user = await User.findOne({ email: email.toLowerCase() }).lean();
+    if (!user) {
+      res.status(401).json({ data: 'Wrong email or password' });
+      return;
+    }
+
+    // Como ahora tenemos User, comprobamos que password es correcto
+    const isValid = await bcrypt.compare(password, user.password);
+    if (!isValid) {
+      res.status(401).json({ data: 'Wrong email or password' });
+      return;
+    }
+
+    // 👮‍♀️👮‍♂️🚔🚨 Aquí creamos el token con la información de User para considerar
+    // que se ha logeado en la aplicación
+    const token = jwt.sign({ id: user._id, email: user.email }, process.env.JWT_SECRET, {
+      expiresIn: 3 * 60 * 60 * 1000,
+    });
+
+    // Activar el debugger: Ctrl + Shift + P => Toggle Auto Attach => Smart
+    res.status(200).json({
+      data: {
+        token,
+        user: {
+          username: user.username,
+          email: user.email,
+        },
+      },
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ data: 'Internal server error' });
+  }
+});
 
 export default router;
