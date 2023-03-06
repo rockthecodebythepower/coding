@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --primary-dark: whitesmoke;
+  --primary-light: #111111;
+  --bg-dark: #111111;
+  --bg-light: whitesmoke;
+  --highlight: royalblue;
+  --divider: rgb(164,164,164);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--primary-dark);
+  transition:  all 0.5s ease-in-out;
+}
+
+.light {
+  background-color: var(--bg-light);
+  color: var(--primary-light);
+}
+
+main {
+  min-height: 80vh;
+}
+
+a,p {
+  font-size: 1.1rem;
+}
