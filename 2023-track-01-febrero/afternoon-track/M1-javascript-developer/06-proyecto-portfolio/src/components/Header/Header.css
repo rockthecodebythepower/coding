@@ -1,0 +1,24 @@
+header {
+  min-height: 8vh;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header > nav > ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+header img {
+  width: 25px;
+  padding-top: 6px;
+}

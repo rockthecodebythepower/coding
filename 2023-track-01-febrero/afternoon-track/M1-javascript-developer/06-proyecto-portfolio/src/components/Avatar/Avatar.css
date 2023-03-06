@@ -1,0 +1,8 @@
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--highlight-gradient);
+  padding: 0.3rem;
+}

@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.home h2 {
+  font-size: 3rem;
+}
