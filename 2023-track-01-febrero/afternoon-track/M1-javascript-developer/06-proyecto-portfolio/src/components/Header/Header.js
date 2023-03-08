@@ -30,8 +30,24 @@ export const Header = () => {
                 </a>
             </li>
         </ul>
+        <button id="themeBtn">☀️</button>
     </nav>
     `;
 };
 
-const template = Header();
+export const changeTheme = () => {
+  const themeBtn = document.querySelector("#themeBtn");
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    changeThemeText();
+  });
+};
+
+const changeThemeText = () => {
+  const themeBtn = document.querySelector("#themeBtn");
+  if (themeBtn.innerText === "☀️") {
+    themeBtn.innerText = "🌑";
+  } else {
+    themeBtn.innerText = "☀️";
+  }
+};

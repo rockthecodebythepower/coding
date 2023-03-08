@@ -6,7 +6,8 @@
   --bg-color-light: #d9d9d9;
   --primary-color-light: #42446e;
 
-  --secondary-color: #a7a7a7;
+  --card-color: #353535;
+  --secondary-color: #838383;
   --highlight-gradient: linear-gradient(
     87deg,
     rgba(131, 58, 180, 1) 0%,
@@ -28,6 +29,7 @@ body {
   background-color: var(--bg-color-dark);
   color: var(--primary-color-dark);
   padding: 0.5rem 2rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .light {

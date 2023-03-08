@@ -1,8 +1,5 @@
-header {
-  min-height: 8vh;
-}
-
 header > nav {
+  min-height: 8vh;
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -21,4 +18,10 @@ header > nav > ul {
 header img {
   width: 25px;
   padding-top: 6px;
+}
+
+header button {
+  background: transparent;
+  border: none;
+  transform: scale(1.5);
 }
