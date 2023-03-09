@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.App__form {
+  display: flex;
+  gap: 8px;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  left: 10%;
+  right: 10%;
+}
+
+.App__form > textarea {
+  width: 100%;
+}

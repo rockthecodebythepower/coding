@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 
 const router = express.Router();
 
+// GET https://node-chat-polling.onrender.com/api/ping
 // GET http://localhost:4001/api/ping
 router.get('/ping', (req, res) => {
   res.status(200).json({ data: 'Pong' });
@@ -49,11 +50,11 @@ router.post('/message', async (req, res) => {
   try {
     const { username, text } = req.body;
 
-    const formattedUsername = username.trim();
-    const formattedText = text.trim();
+    const formattedUsername = username?.trim();
+    const formattedText = text?.trim();
 
     if (!formattedUsername || !formattedText) {
-      res.status(404).json({ data: 'Incomplete username or text' });
+      res.status(400).json({ data: 'Incomplete username or text' });
       return;
     }
 
