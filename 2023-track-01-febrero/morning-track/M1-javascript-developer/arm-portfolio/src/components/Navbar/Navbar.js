@@ -1,4 +1,8 @@
 import './navbar.css'
+import homeSvg from '/public/icons/home.svg'
+import projectSvg from '/public/icons/windows-explorer.svg'
+import aboutSvg from '/public/icons/about.svg'
+
 
 export const changeTheme = () => {
   const themeBtn = document.querySelector('#themeBtn')
@@ -22,17 +26,23 @@ export const Navbar = () => `
     <ul>
       <li>
         <a href="#" id="homeLink"> 
-          Go! 🚀
+          <img src="${homeSvg}" alt="Home logo" />
         </a>
       </li>
       <li>
-        <a href="#" id="projectsLink"> Projects 💽 </a>
+        <a href="#" id="projectsLink"> 
+          <img src="${projectSvg}" alt="Home logo" />
+        </a>
       </li>
       <li>
-        <a href="#" id="aboutLink"> About 🧙🏽‍♂️ </a>
+        <a href="#" id="aboutLink"> 
+          <img src="${aboutSvg}" alt="Home logo" />
+        </a>
       </li>
       <li>
-        <button id="themeBtn">☀️</button>
+        <button id="themeBtn">
+        ☀️
+        </button>
       </li>
     </ul>
   </nav>

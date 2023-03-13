@@ -16,18 +16,6 @@
 
 .home > .home-title {
   font-size: 5rem;
-  background: linear-gradient(to right, rgba(168,63,251,1) 0%, rgba(63,94,251,1) 50%, rgba(252,70,107,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.light .home > .home-title {
-  color: black;
-  background: none;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: inherit;
 }
 
 .home > a {

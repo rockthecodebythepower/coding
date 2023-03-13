@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 8rem;
   gap: 4rem;
@@ -12,6 +12,10 @@ footer > div {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+footer > div > button {
+  flex-grow: 1;
 }
 
 @media (max-width: 750px) {
