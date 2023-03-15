@@ -8,10 +8,10 @@ export const PROJECTS = [
     github: 'http://github.com/myuser/proyecto1',
     link: 'www.proyecto.com',
     detail: {
-      imagePost: 'url',
+      imagePost: 'https://images.unsplash.com/photo-1635468872214-8d30953f0057?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=737&q=80',
       titlePost: 'Title 1',
-      heroPost: 'Texto Hero',
-      sectionPost: 'Section post'
+      heroPost: 'This is a subtitle',
+      sectionPost: 't is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).'
     }
   },
   {

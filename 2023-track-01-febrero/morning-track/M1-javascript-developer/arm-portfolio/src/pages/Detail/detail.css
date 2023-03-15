@@ -1,0 +1,20 @@
+.detail-img-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-img-container > img{
+  width: 50%;
+  height: auto;
+}
+
+.project-container > h2,
+.project-container > h3 {
+  text-align: center;
+  margin: 1em;
+}
+
+.project-container > p {
+  margin: 2em;
+}

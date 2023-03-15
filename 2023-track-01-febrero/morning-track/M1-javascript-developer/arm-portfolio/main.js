@@ -6,6 +6,7 @@ import { Divider } from './src/components/Divider/Divider'
 import { Home } from './src/pages/home/Home'
 import { linkPage } from './src/utils/linkPage'
 import { Projects } from './src/pages/Projects/Projects'
+import { About } from './src/pages/About/About'
 
 
 const header = document.querySelector('header')
@@ -15,6 +16,7 @@ footer.innerHTML = Footer()
 
 linkPage('#homeLink', Home)
 linkPage('#projectsLink', Projects)
+linkPage('#aboutLink', About)
 
 Home()
 

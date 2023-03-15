@@ -10,8 +10,7 @@ export const Detail = (id) => {
   cleanPage(main)
   main.innerHTML = `
   <section class="project Detail">
-    <h2>${id}</h2>
-    ${Divider()}
+
     <div class="project-container"></div>
   </section>
 `
@@ -21,5 +20,9 @@ export const Detail = (id) => {
   const container = document.querySelector('.project-container')
   container.innerHTML += `
     <h2>${project.detail.titlePost}</h2>
+    ${Divider()}
+    <div class="detail-img-container"><img src=${project.detail.imagePost} alt=${project.detail.titlePost} /></div>
+    <h3>${project.detail.heroPost}</h3>
+    <p>${project.detail.sectionPost}</p>
   `
 }
